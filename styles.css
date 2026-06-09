@@ -320,25 +320,23 @@ p { text-wrap: pretty; }
 /* ----------------------------- Logo grids (marcas / clientes) ----------------------------- */
 .logo-grid {
   list-style: none; padding: 0; margin: 0;
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px;
   background: var(--line); border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden;
 }
-@media (min-width: 600px) { .logo-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 920px) { .logo-grid { grid-template-columns: repeat(4, 1fr); } }
-.clients-grid { grid-template-columns: repeat(2, 1fr); }
-@media (min-width: 720px) { .clients-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 540px) { .logo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 820px) { .logo-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 1040px) { #marcas .logo-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
 .logo-tile {
-  background: var(--surface); display: grid; place-items: center;
-  aspect-ratio: 5 / 3; padding: clamp(1rem, 2.5vw, 1.75rem);
-  transition: background-color 0.4s var(--ease-out);
+  background: var(--surface); display: grid; place-items: center; min-width: 0;
+  min-height: clamp(92px, 11vw, 120px); padding: 1.1rem 1rem;
+  transition: background-color 0.3s var(--ease-out);
 }
 .logo-tile img {
-  max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;
-  filter: saturate(0.55); opacity: 0.9;
-  transition: filter 0.4s var(--ease-out), opacity 0.4s var(--ease-out), transform 0.5s var(--ease-out-soft);
+  max-height: 2.75rem; max-width: 82%; width: auto; height: auto; object-fit: contain;
+  transition: transform 0.4s var(--ease-out-soft);
 }
 .logo-tile:hover { background: var(--canvas); }
-.logo-tile:hover img { filter: none; opacity: 1; transform: scale(1.05); }
+.logo-tile:hover img { transform: scale(1.06); }
 
 /* ----------------------------- Pillars (datos del sitio) ----------------------------- */
 .pillars {
