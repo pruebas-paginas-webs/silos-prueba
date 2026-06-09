@@ -7,7 +7,7 @@ Hecho en **HTML, CSS y JavaScript** puro, sin dependencias ni paso de build.
 
 ## Ver el sitio
 
-- **En vivo:** _(se completa al activar GitHub Pages)_
+- **En vivo:** <https://pruebas-paginas-webs.github.io/silos-prueba/>
 - **Local:** parado en esta carpeta, correr `python -m http.server 5173` y abrir <http://localhost:5173>
 
 ## Estructura
