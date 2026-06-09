@@ -1,0 +1,10 @@
+# Archivos de trabajo internos (no publicar)
+.agents/
+.claude/
+PRODUCT.md
+DESIGN.md
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
