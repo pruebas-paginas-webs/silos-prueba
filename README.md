@@ -1,7 +1,7 @@
-# Silos SRL — Paraguay
+# Silos Paraguay
 
-Sitio institucional de la sucursal de **Paraguay** de Silos SRL: importación y distribución de
-productos de calidad internacional (marcas premium de alimentos frescos, congelados y secos).
+Sitio institucional de **Silos Paraguay SRL**: importación y distribución de alimentos premium
+(quesos, fiambres y productos gourmet) desde Europa, operando en Paraguay desde 2021.
 
 Hecho en **HTML, CSS y JavaScript** puro, sin dependencias ni paso de build.
 
@@ -15,9 +15,11 @@ Hecho en **HTML, CSS y JavaScript** puro, sin dependencias ni paso de build.
 - `index.html` — contenido y marcado semántico
 - `styles.css` — estilos (tokens de diseño, secciones, responsive, motion)
 - `main.js` — navegación, menú móvil y animaciones al hacer scroll
+- `assets/` — logo e imágenes propias, servidas localmente (sin hotlinks a terceros)
 
 ## Notas
 
-- El contenido y las imágenes provienen del sitio principal (silossrl.com), adaptados para Paraguay.
-- Las imágenes se referencian desde silossrl.com; para producción conviene descargarlas y hostearlas en este sitio.
-- **Pendiente:** datos de contacto de la sucursal de Paraguay (teléfono, email, dirección).
+- Todo el contenido corresponde a **Silos Paraguay SRL**, empresa independiente fundada en 2021
+  (no confundir con otras empresas del mismo rubro que operan en otros países).
+- Pendientes de contenido (fotos de producto, dirección física, etc.) están documentados en
+  `PLAN.md` (no publicado — uso interno).

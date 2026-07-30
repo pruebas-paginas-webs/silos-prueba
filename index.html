@@ -3,22 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Silos SRL Paraguay — Importación y distribución de alimentos premium</title>
-  <meta name="description" content="Desde 2000, Silos SRL representa marcas premium de alimentos frescos, congelados y secos. Atención personalizada, logística propia y una cartera seleccionada de productos gourmet en Paraguay." />
-  <meta name="theme-color" content="#274aa0" />
+  <title>Silos Paraguay — Alimentos premium de Europa | Importación y distribución</title>
+  <meta name="description" content="¡Traemos a Paraguay las cosas más ricas del mundo! Quesos y fiambres premium de Europa, con trazabilidad y cuidado del producto en cada entrega." />
+  <meta name="theme-color" content="#2B2D42" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Silos SRL Paraguay — Importación y distribución de productos de calidad internacional" />
-  <meta property="og:description" content="Somos socios estratégicos: marcas premium, logística propia y atención personalizada en Paraguay." />
+  <meta property="og:site_name" content="Silos Paraguay" />
+  <meta property="og:title" content="Silos Paraguay — ¡Traemos a Paraguay las cosas más ricas del mundo!" />
+  <meta property="og:description" content="Importamos y distribuimos productos premium de marcas europeas prestigiosas para los clientes más exigentes de Paraguay. Desde 2021." />
   <meta property="og:locale" content="es_PY" />
+  <!-- PENDIENTE: og:image (assets/img/og-silos-paraguay.png) y og:url/canonical (falta confirmar dominio final) -->
 
-  <link rel="icon" href="https://silossrl.com/wp-content/uploads/2025/05/favicon.png" />
+  <link rel="icon" type="image/png" href="assets/logo/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon-180.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Silos Paraguay SRL",
+    "email": "jvanden@silospy.com",
+    "telephone": "+595981630931",
+    "foundingDate": "2021",
+    "areaServed": "PY",
+    "slogan": "¡Traemos a Paraguay las cosas más ricas del mundo!"
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -26,27 +42,24 @@
   <!-- ============================= HEADER / NAV ============================= -->
   <header class="site-header" data-header>
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Silos SRL, inicio">
-        <svg class="brand-mark" viewBox="0 0 48 20" aria-hidden="true" focusable="false">
-          <rect x="9" y="7.5" width="30" height="5" rx="2.5" />
-          <circle cx="9" cy="10" r="7.5" />
-          <circle cx="24" cy="10" r="7.5" />
-          <circle cx="39" cy="10" r="7.5" />
-        </svg>
-        <span class="brand-word">Silos</span>
+      <a class="brand" href="#top" aria-label="Silos Paraguay, inicio">
+        <img class="brand-mark" src="assets/logo/isotipo-512.png" alt="" width="40" height="40" />
+        <span class="brand-word">Silos<span class="brand-word-sub">Paraguay</span></span>
       </a>
 
       <nav class="nav" aria-label="Principal">
         <ul class="nav-list">
           <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#origenes">Orígenes</a></li>
+          <li><a href="#productos">Productos</a></li>
           <li><a href="#marcas">Marcas</a></li>
           <li><a href="#clientes">Clientes</a></li>
-          <li><a href="#novedades">Novedades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
 
-      <a class="btn btn-primary nav-cta" href="#contacto">
-        <span>Contacto</span>
+      <a class="btn btn-primary nav-cta" href="mailto:jvanden@silospy.com?subject=Consulta%20desde%20la%20web">
+        <span>Escribinos</span>
         <span class="btn-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
@@ -62,12 +75,13 @@
   <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
     <nav class="mobile-nav" aria-label="Menú móvil">
       <a href="#nosotros" data-mm-link>Nosotros</a>
+      <a href="#origenes" data-mm-link>Orígenes</a>
+      <a href="#productos" data-mm-link>Productos</a>
       <a href="#marcas" data-mm-link>Marcas</a>
       <a href="#clientes" data-mm-link>Clientes</a>
-      <a href="#novedades" data-mm-link>Novedades</a>
       <a href="#contacto" data-mm-link>Contacto</a>
-      <a class="btn btn-primary mobile-cta" href="#contacto" data-mm-link>
-        <span>Contacto</span>
+      <a class="btn btn-primary mobile-cta" href="mailto:jvanden@silospy.com?subject=Consulta%20desde%20la%20web" data-mm-link>
+        <span>Escribinos</span>
         <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
     </nav>
@@ -77,22 +91,27 @@
     <span id="top"></span>
 
     <!-- ============================= HERO ============================= -->
+    <!-- PENDIENTE: foto de hero (ver PLAN.md → Brief de fotos). Mientras tanto, fondo sólido de marca. -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media">
-        <img src="https://silossrl.com/wp-content/uploads/2026/03/queso-inicio.webp"
-             alt="Variedad de quesos premium" fetchpriority="high" />
         <div class="hero-scrim" aria-hidden="true"></div>
       </div>
 
       <div class="container hero-inner">
-        <p class="kicker kicker-light" data-reveal>Silos SRL</p>
+        <p class="kicker kicker-light" data-reveal>Silos Paraguay · Importación y distribución</p>
         <h1 id="hero-title" class="hero-title" data-reveal>
-          Importación y distribución de productos de calidad internacional en Paraguay
+          ¡Traemos a Paraguay las cosas más ricas del mundo!
         </h1>
+        <p class="hero-lead" data-reveal>
+          Desde 2021 importamos y distribuimos quesos, fiambres y otros productos premium de Dinamarca, España, Italia, Países Bajos e Inglaterra, para los clientes y consumidores más exigentes de Paraguay.
+        </p>
         <div class="hero-actions" data-reveal>
-          <a class="btn btn-primary btn-lg" href="#nosotros">
-            <span>Conocenos</span>
+          <a class="btn btn-primary btn-lg" href="mailto:jvanden@silospy.com?subject=Consulta%20desde%20la%20web">
+            <span>Escribinos</span>
             <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+          <a class="btn btn-ghost-light btn-lg" href="#productos">
+            <span>Mirá nuestros productos</span>
           </a>
         </div>
       </div>
@@ -100,39 +119,132 @@
 
     <!-- ============================= NOSOTROS ============================= -->
     <section class="about section" id="nosotros" aria-labelledby="about-title">
-      <div class="container about-grid">
-        <div class="about-copy">
+      <div class="container">
+        <header class="section-head">
           <p class="kicker" data-reveal>Sobre nosotros</p>
-          <h2 id="about-title" class="section-title" data-reveal>Somos socios estratégicos</h2>
-          <p class="lead" data-reveal>
-            Desde 2000, Silos SRL representa marcas premium de alimentos frescos, congelados y secos.
-            Ofrecemos atención personalizada, logística propia y una cartera seleccionada de productos
-            gourmet para cadenas comerciales, tiendas especializadas y distribuidores.
+          <h2 id="about-title" class="section-title" data-reveal>Lo mejor de Europa, elegido pieza por pieza</h2>
+          <p class="section-sub" data-reveal>
+            Silos Paraguay nace en 2021 para importar y distribuir productos de calidad premium de marcas
+            prestigiosas, pensados para los clientes y consumidores más exigentes de Paraguay.
           </p>
-          <div class="about-cta" data-reveal>
-            <a class="btn btn-primary" href="#contacto">
-              <span>Conocenos</span>
-              <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            </a>
-          </div>
+        </header>
+
+        <div class="about-cta" data-reveal>
+          <a class="btn btn-primary" href="mailto:jvanden@silospy.com?subject=Consulta%20desde%20la%20web">
+            <span>Escribinos</span>
+            <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
         </div>
 
-        <figure class="about-figure" data-reveal>
-          <div class="frame">
-            <img src="https://silossrl.com/wp-content/uploads/2026/03/Copia-de-SILOS-BAJA-093.jpg"
-                 alt="Productos y operación de Silos SRL" loading="lazy" />
-          </div>
-        </figure>
-      </div>
-
-      <!-- Pilares (extraídos del texto real del sitio) -->
-      <div class="container">
         <ul class="pillars" data-reveal>
-          <li><span class="pillar-k">Desde 2000</span><span class="pillar-v">Importando y distribuyendo</span></li>
-          <li><span class="pillar-k">Logística propia</span><span class="pillar-v">Del origen a tu negocio</span></li>
-          <li><span class="pillar-k">Cartera curada</span><span class="pillar-v">Marcas premium seleccionadas</span></li>
-          <li><span class="pillar-k">Paraguay</span><span class="pillar-v">Presencia y cobertura</span></li>
+          <li><span class="pillar-k">Desde 2021</span><span class="pillar-v">Operando en Paraguay</span></li>
+          <li><span class="pillar-k">Cinco orígenes</span><span class="pillar-v">Europa seleccionada</span></li>
+          <li><span class="pillar-k">Trazabilidad</span><span class="pillar-v">De toda la operación</span></li>
+          <li><span class="pillar-k">Marcas prestigiosas</span><span class="pillar-v">Curaduría permanente</span></li>
         </ul>
+      </div>
+    </section>
+
+    <!-- ============================= VALORES ============================= -->
+    <section class="values-band" id="valores" aria-labelledby="values-title">
+      <div class="container">
+        <h2 id="values-title" class="visually-hidden">Nuestros valores</h2>
+        <ul class="values-grid" data-reveal>
+          <li>
+            <span class="value-word">Respeto</span>
+            <p class="value-desc">Por el producto, por el cliente y por la palabra empeñada.</p>
+          </li>
+          <li>
+            <span class="value-word">Calidad</span>
+            <p class="value-desc">Sin atajos, en cada eslabón de la cadena.</p>
+          </li>
+          <li>
+            <span class="value-word">Sabor</span>
+            <p class="value-desc">Al final, de esto se trata todo.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================= ORÍGENES ============================= -->
+    <section class="origins section section-panel" id="origenes" aria-labelledby="origins-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker" data-reveal>Orígenes</p>
+          <h2 id="origins-title" class="section-title" data-reveal>Cinco orígenes, un mismo estándar</h2>
+        </header>
+
+        <ul class="origins-list" data-reveal>
+          <li><span class="origin-country">Dinamarca</span><span class="origin-detail">Especialidades seleccionadas.</span></li>
+          <li><span class="origin-country">España</span><span class="origin-detail">Jamón serrano y embutidos curados.</span></li>
+          <li><span class="origin-country">Italia</span><span class="origin-detail">Grana padano y clásicos italianos.</span></li>
+          <li><span class="origin-country">Países Bajos</span><span class="origin-detail">Quesos de tradición holandesa.</span></li>
+          <li><span class="origin-country">Inglaterra</span><span class="origin-detail">Cheddar con carácter.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================= PRODUCTOS ============================= -->
+    <section class="products section" id="productos" aria-labelledby="products-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker" data-reveal>Productos</p>
+          <h2 id="products-title" class="section-title" data-reveal>Los favoritos de la casa</h2>
+          <p class="section-sub" data-reveal>Los clásicos que no pueden faltar en tu góndola ni en tu carta.</p>
+        </header>
+
+        <!-- PENDIENTE: fotos de los 8 productos (ver PLAN.md → Brief de fotos, ChatGPT). Tarjetas sin imagen mientras tanto. -->
+        <ul class="products-grid" data-reveal>
+          <li class="product-card">
+            <div class="product-media"></div>
+            <h3 class="product-name">Brie</h3>
+            <p class="product-note">Cremoso, de corteza blanca y corazón suave.</p>
+          </li>
+          <li class="product-card">
+            <div class="product-media"></div>
+            <h3 class="product-name">Cheddar inglés</h3>
+            <p class="product-note">Intenso y con carácter, como debe ser.</p>
+          </li>
+          <li class="product-card">
+            <div class="product-media"></div>
+            <h3 class="product-name">Queso azul</h3>
+            <p class="product-note">Para los que saben lo que buscan.</p>
+          </li>
+          <li class="product-card">
+            <div class="product-media"></div>
+            <h3 class="product-name">Grana padano</h3>
+            <p class="product-note">El clásico italiano: para rallar, lascar y no compartir.</p>
+          </li>
+          <li class="product-card">
+            <div class="product-media"></div>
+            <h3 class="product-name">Jamón serrano</h3>
+            <p class="product-note">Curado con paciencia, cortado fino.</p>
+          </li>
+          <li class="product-card">
+            <!-- PENDIENTE cliente: confirmar si "Arroyo" es marca o tipo de chorizo -->
+            <div class="product-media"></div>
+            <h3 class="product-name">Chorizo Arroyo</h3>
+            <p class="product-note">Un clásico español, cortado en finas lonjas.</p>
+          </li>
+          <li class="product-card">
+            <div class="product-media"></div>
+            <h3 class="product-name">Jamón cocido</h3>
+            <p class="product-note">El infaltable de toda picada.</p>
+          </li>
+          <li class="product-card">
+            <!-- PENDIENTE cliente: falta definir el 8º producto -->
+            <div class="product-media"></div>
+            <h3 class="product-name">Próximamente</h3>
+            <p class="product-note">Estamos sumando un nuevo producto a la selección.</p>
+          </li>
+        </ul>
+
+        <div class="products-cta" data-reveal>
+          <a class="btn btn-ghost" href="mailto:jvanden@silospy.com?subject=Consulta%20de%20productos">
+            <span>Consultá disponibilidad</span>
+            <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -141,154 +253,130 @@
       <div class="container">
         <header class="section-head">
           <p class="kicker" data-reveal>Marcas</p>
-          <h2 id="brands-title" class="section-title" data-reveal>Nuestras principales marcas</h2>
+          <h2 id="brands-title" class="section-title" data-reveal>Algunas de las marcas que traemos</h2>
+          <p class="section-sub" data-reveal>Trabajamos con productores europeos de primera línea.</p>
         </header>
 
-        <ul class="logo-grid" data-reveal>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/05/SOIGNON.png" alt="Soignon" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/05/ROCINANTE.png" alt="Quesos Rocinante" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/05/ARLA-1.png" alt="Arla" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/05/DODONI-1.png" alt="Dodoni" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/05/LANDANA-1.png" alt="Landana" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/05/CALZETTI-1.png" alt="Calzetti" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/05/MANTOVA.png" alt="Mantova" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/05/STERILGARDA.png" alt="Sterilgarda" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2026/03/grondona.png" alt="Grondona" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2026/03/cipriani.webp" alt="Cipriani" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/DOLCERIA-ALBA.jpeg" alt="Dolceria Alba" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2026/03/alcalaoliva.png" alt="Alcalá Oliva" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/Logo_joselito.png" alt="Joselito" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/ZANETTI.jpg" alt="Zanetti" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/ROSENBORG.jpg" alt="Rosenborg" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/PASTA-RANA.png" alt="Pasta Rana" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/LEONCINI.png" alt="Leoncini" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/ESPANA-E-HIJOS.jpeg" alt="España e Hijos" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/emborg-logo.png" alt="Emborg" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/CIAO.png" alt="Ciao" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/BRETS.jpg" alt="Bret's" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/BOSKA.jpg" alt="Boska" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2026/03/lucia.webp" alt="Lucía" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/CAMPO-DORO.jpg" alt="Campo D'Oro" loading="lazy" /></li>
+        <!-- Lista completa de marcas: PENDIENTE (Agustín la va a pasar con los nombres definitivos). Estas 4 ya están confirmadas. -->
+        <ul class="products-grid" data-reveal>
+          <li class="product-card">
+            <div class="product-media"><img src="assets/img/montana-intenso.webp" alt="Queso Montana Intenso" loading="lazy" /></div>
+            <h3 class="product-name">Montana</h3>
+            <p class="product-note">Veldhuyzen Kaas · Países Bajos</p>
+          </li>
+          <li class="product-card">
+            <div class="product-media"><img src="assets/img/basiron-olive-tomato.webp" alt="Queso Basiron Olive Tomato" loading="lazy" /></div>
+            <h3 class="product-name">Basiron Olive Tomato</h3>
+            <p class="product-note">Veldhuyzen Kaas · Países Bajos</p>
+          </li>
+          <li class="product-card">
+            <div class="product-media"><img src="assets/img/basiron-pesto-verde.webp" alt="Queso Basiron Pesto Verde" loading="lazy" /></div>
+            <h3 class="product-name">Basiron Pesto Verde</h3>
+            <p class="product-note">Veldhuyzen Kaas · Países Bajos</p>
+          </li>
+          <li class="product-card">
+            <div class="product-media"><img src="assets/img/old-amsterdam.webp" alt="Queso Old Amsterdam" loading="lazy" /></div>
+            <h3 class="product-name">Old Amsterdam</h3>
+            <p class="product-note">Westland · Países Bajos</p>
+          </li>
         </ul>
       </div>
     </section>
 
-    <!-- ============================= PROPUESTA DE VALOR ============================= -->
+    <!-- ============================= CÓMO TRABAJAMOS ============================= -->
     <section class="value section" aria-labelledby="value-title">
       <div class="container value-grid">
         <div class="value-copy">
-          <p class="kicker" data-reveal>Propuesta de valor</p>
-          <h2 id="value-title" class="section-title" data-reveal>Elegimos como tu proveedor estratégico</h2>
+          <p class="kicker" data-reveal>Cómo trabajamos</p>
+          <h2 id="value-title" class="section-title" data-reveal>Estándares de primera línea, de punta a punta</h2>
           <p class="lead" data-reveal>
-            Ofrecemos una combinación de experiencia, respaldo y atención personalizada para garantizar
-            que cada producto llegue en condiciones óptimas y con el soporte que tu negocio necesita.
+            Trabajamos con empresas de logística y distribución que cumplen —y superan— las normas más exigentes
+            que exigen las compañías de primera línea del consumo masivo.
           </p>
         </div>
 
         <ul class="value-points" data-reveal>
           <li>
             <span class="point-mark" aria-hidden="true"></span>
-            <h3>Entrega eficiente y cobertura regional</h3>
+            <h3>Calidad premium en cada producto que elegimos</h3>
           </li>
           <li>
             <span class="point-mark" aria-hidden="true"></span>
-            <h3>Adaptación al canal de venta (retail, food service o distribución)</h3>
+            <h3>Cuidado del producto de origen a destino</h3>
+          </li>
+          <li>
+            <span class="point-mark" aria-hidden="true"></span>
+            <h3>Trazabilidad de toda la operación</h3>
+          </li>
+          <li>
+            <span class="point-mark" aria-hidden="true"></span>
+            <h3>Salubridad e higiene respetadas al detalle</h3>
           </li>
         </ul>
-      </div>
-    </section>
-
-    <!-- ============================= GALERÍA ============================= -->
-    <section class="gallery-section section section-panel" aria-label="Galería">
-      <div class="container">
-        <div class="gallery" data-reveal>
-          <img src="https://silossrl.com/wp-content/uploads/2026/03/Copia-de-SILOS-BAJA-115.jpg" alt="Operación de Silos SRL" loading="lazy" />
-          <img src="https://silossrl.com/wp-content/uploads/2026/03/Copia-de-SILOS-BAJA-020.jpg" alt="Productos de Silos SRL" loading="lazy" />
-          <img src="https://silossrl.com/wp-content/uploads/2026/03/Copia-de-SILOS-BAJA-091.jpg" alt="Productos de Silos SRL" loading="lazy" />
-        </div>
       </div>
     </section>
 
     <!-- ============================= CLIENTES ============================= -->
-    <section class="clients section" id="clientes" aria-labelledby="clients-title">
+    <section class="clients section section-panel" id="clientes" aria-labelledby="clients-title">
       <div class="container">
         <header class="section-head">
           <p class="kicker" data-reveal>Clientes</p>
-          <h2 id="clients-title" class="section-title" data-reveal>Confiabilidad que cruza fronteras</h2>
-          <p class="section-sub" data-reveal>Cadenas, tiendas especializadas y distribuidores confían en Silos SRL para representar y distribuir marcas exclusivas.</p>
+          <h2 id="clients-title" class="section-title" data-reveal>Nos encontrás en las góndolas y cocinas más exigentes de Paraguay</h2>
+          <p class="section-sub" data-reveal>Cadenas de retail y cocinas profesionales confían en Silos Paraguay.</p>
         </header>
 
-        <ul class="logo-grid clients-grid" data-reveal>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/disco-cencosud.png" alt="Disco" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/jumbo.png" alt="Jumbo" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/05/Logo_Supermercado_Coto.svg-1.png" alt="Coto" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/05/Logo_de_YPF.svg-1.png" alt="YPF" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/05/Tienda_Inglesa.svg-1.png" alt="Tienda Inglesa" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/05/Devoto5-1.png" alt="Devoto" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/05/tata-1.png" alt="Tata" loading="lazy" /></li>
-          <li class="logo-tile"><img src="https://silossrl.com/wp-content/uploads/2025/06/geant-e1749561522698.png" alt="Géant" loading="lazy" /></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ============================= CTA MARCAS ============================= -->
-    <section class="brandcall" aria-labelledby="brandcall-title">
-      <div class="container brandcall-inner">
-        <h2 id="brandcall-title" class="brandcall-title" data-reveal>Hacé que tu marca llegue más lejos</h2>
-        <p class="brandcall-lead" data-reveal>Conectá con distribuidores y canales clave en Paraguay, de la mano de un socio que entiende el mercado.</p>
-        <a class="btn btn-light btn-lg" href="#contacto" data-reveal>
-          <span>Contactanos</span>
-          <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
-      </div>
-    </section>
-
-    <!-- ============================= NOVEDADES ============================= -->
-    <section class="news section section-panel" id="novedades" aria-labelledby="news-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="kicker" data-reveal>Blog</p>
-          <h2 id="news-title" class="section-title" data-reveal>Últimas novedades</h2>
-        </header>
-
-        <div class="news-grid">
-          <article class="post-card" data-reveal>
-            <div class="post-media"><img src="https://silossrl.com/wp-content/uploads/2026/04/grondona-bulgaria-sofia.webp" alt="Grondona" loading="lazy" /></div>
-            <div class="post-body">
-              <h3>Tradición centenaria: Llegó Grondona a Silos</h3>
-              <p>¡Estamos felices de presentar la llegada de Grondona, el corazón de la pastelería fina de Génova!</p>
-            </div>
-          </article>
-
-          <article class="post-card" data-reveal>
-            <div class="post-media"><img src="https://silossrl.com/wp-content/uploads/2026/04/images.jpg" alt="Cipriani" loading="lazy" /></div>
-            <div class="post-body">
-              <h3>Directo desde Venecia: Cipriani</h3>
-              <p>¡Estamos emocionados de incorporar a Cipriani Food, el estándar de oro de la pasta artesanal italiana!</p>
-            </div>
-          </article>
-
-          <article class="post-card" data-reveal>
-            <div class="post-media"><img src="https://silossrl.com/wp-content/uploads/2025/06/Dolceria-Alba.jpg" alt="Dolceria Alba" loading="lazy" /></div>
-            <div class="post-body">
-              <h3>Dolceria Alba se suma a nuestro portfolio</h3>
-              <p>Desde Italia, llegan los postres congelados de Dolceria Alba. En Silos seguimos ampliando nuestra propuesta gourmet.</p>
-            </div>
-          </article>
+        <div class="clients-groups" data-reveal>
+          <div>
+            <p class="clients-group-title">Retail</p>
+            <ul class="clients-names-grid">
+              <li class="client-name-tile">Retail SA (S6)</li>
+              <li class="client-name-tile">Casa Rica</li>
+              <li class="client-name-tile">Areté</li>
+              <li class="client-name-tile">Biggie</li>
+              <li class="client-name-tile">Super Box</li>
+              <li class="client-name-tile">Todo Carne</li>
+            </ul>
+          </div>
+          <div>
+            <p class="clients-group-title">Gastronomía</p>
+            <ul class="clients-names-grid">
+              <li class="client-name-tile">Pederzani</li>
+              <li class="client-name-tile">Grupo Euro</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ============================= CONTACTO (a completar) ============================= -->
+    <!-- ============================= CTA FINAL ============================= -->
+    <section class="brandcall" aria-labelledby="brandcall-title">
+      <div class="container brandcall-inner">
+        <h2 id="brandcall-title" class="brandcall-title" data-reveal>Llevá lo más rico del mundo a tu negocio</h2>
+        <p class="brandcall-lead" data-reveal>¿Manejás un retail, un restaurante o una tienda especializada? Escribinos y armamos la propuesta para tu canal.</p>
+        <a class="btn btn-light btn-lg" href="mailto:jvanden@silospy.com?subject=Consulta%20comercial" data-reveal>
+          <span>Escribinos</span>
+          <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+        <p class="brandcall-note" data-reveal>
+          o llamanos al <a href="tel:+595981630931">+595 981 630 931</a> ·
+          ¿Representás una marca europea que quiere llegar a Paraguay?
+          <a href="mailto:jvanden@silospy.com?subject=Marca%20interesada%20en%20Paraguay">También queremos conocerte</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACTO ============================= -->
     <section class="contact section" id="contacto" aria-labelledby="contact-title">
       <div class="container">
         <header class="section-head">
           <p class="kicker" data-reveal>Contacto</p>
-          <h2 id="contact-title" class="section-title" data-reveal>Información de contacto</h2>
+          <h2 id="contact-title" class="section-title" data-reveal>Hablemos</h2>
+          <p class="section-sub" data-reveal>La forma más rápida de llegar a nosotros es por email.</p>
         </header>
-        <div class="contact-pending" data-reveal>
-          <p>Los datos de contacto de la sucursal de Paraguay se cargarán acá.</p>
-          <p class="contact-pending-note">Pendiente: teléfono, email y dirección de Paraguay.</p>
+
+        <div class="contact-card" data-reveal>
+          <a class="contact-email" href="mailto:jvanden@silospy.com?subject=Consulta%20desde%20la%20web">jvanden@silospy.com</a>
+          <p class="contact-phone">También podés llamarnos: <a href="tel:+595981630931">+595 981 630 931</a></p>
         </div>
       </div>
     </section>
@@ -298,32 +386,33 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <img class="footer-logo" src="https://silossrl.com/wp-content/uploads/2025/05/Silos-LogoBlanco.png" alt="Silos SRL" loading="lazy" />
-        <p class="footer-tag">Importación y distribución de productos de calidad internacional. Marcas premium, logística propia y atención personalizada.</p>
+        <img class="footer-logo" src="assets/logo/silos-paraguay-claro.png" alt="Silos Paraguay" loading="lazy" />
+        <p class="footer-tag">¡Traemos a Paraguay las cosas más ricas del mundo! Importación y distribución de alimentos premium de Europa, desde 2021.</p>
       </div>
 
       <nav class="footer-nav" aria-label="Pie de página">
         <h4>Enlaces rápidos</h4>
         <ul>
           <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#origenes">Orígenes</a></li>
+          <li><a href="#productos">Productos</a></li>
           <li><a href="#marcas">Marcas</a></li>
           <li><a href="#clientes">Clientes</a></li>
-          <li><a href="#novedades">Novedades</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
 
       <div class="footer-contact">
-        <h4>Información de contacto</h4>
+        <h4>Contacto</h4>
         <ul>
-          <li>Sucursal Paraguay</li>
-          <li class="footer-pending">Datos a completar</li>
+          <li><a href="mailto:jvanden@silospy.com">jvanden@silospy.com</a></li>
+          <li><a href="tel:+595981630931">+595 981 630 931</a></li>
         </ul>
       </div>
     </div>
 
     <div class="container footer-bottom">
-      <p>© <span data-year>2026</span> Silos SRL. Todos los derechos reservados.</p>
+      <p>© <span data-year>2026</span> Silos Paraguay SRL. Todos los derechos reservados.</p>
     </div>
   </footer>
 
