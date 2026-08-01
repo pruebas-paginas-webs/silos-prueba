@@ -326,6 +326,42 @@ p { text-wrap: pretty; }
 .frame img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: calc(var(--r-xl) - 0.55rem); }
 .about-figure figcaption { margin-top: 1rem; text-align: center; font-size: 0.86rem; color: var(--ink-mute); font-style: italic; font-family: var(--font-display); }
 
+/* ----------------------------- Marquee de logos (marcas) ----------------------------- */
+.brands-marquee {
+  --marquee-gap: clamp(3rem, 6vw, 5rem);
+  overflow: hidden;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 7%, black 93%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 7%, black 93%, transparent);
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  padding-block: 0.75rem;
+  animation: marquee-slide 38s linear infinite;
+}
+.brands-marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-set {
+  display: flex; align-items: center; gap: var(--marquee-gap);
+  padding-right: var(--marquee-gap);
+}
+.marquee-set img {
+  height: clamp(2.25rem, 4vw, 3rem); width: auto; max-width: 11rem; object-fit: contain;
+}
+.marquee-chip-dark {
+  display: inline-flex; align-items: center;
+  background: var(--brand); border-radius: var(--r-sm);
+  padding: 0.55rem 0.95rem;
+}
+.marquee-chip-dark img { height: clamp(1.35rem, 2.4vw, 1.8rem); }
+@keyframes marquee-slide { to { transform: translateX(-50%); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .brands-marquee { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+  .marquee-track { animation: none; }
+  .marquee-track [data-marquee-dup] { display: none; }
+}
+
 /* ----------------------------- Logo grids (marcas / clientes) ----------------------------- */
 .logo-grid {
   list-style: none; padding: 0; margin: 0;
