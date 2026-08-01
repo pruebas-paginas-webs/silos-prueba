@@ -21,6 +21,13 @@
   var toggle = document.querySelector("[data-menu-toggle]");
   var menu = document.querySelector("[data-mobile-menu]");
 
+  // Con el menú abierto, el contenido tapado no debe recibir foco.
+  // El header queda activo: ahí vive el botón que cierra el menú.
+  var inertTargets = [document.querySelector("#main"), document.querySelector(".site-footer")];
+  function setPageInert(value) {
+    inertTargets.forEach(function (el) { if (el) el.inert = value; });
+  }
+
   function openMenu() {
     if (!menu || !toggle) return;
     menu.hidden = false;
@@ -30,6 +37,9 @@
     toggle.setAttribute("aria-expanded", "true");
     toggle.setAttribute("aria-label", "Cerrar menú");
     document.body.style.overflow = "hidden";
+    setPageInert(true);
+    var firstLink = menu.querySelector("a");
+    if (firstLink) firstLink.focus();
   }
 
   function closeMenu() {
@@ -38,6 +48,7 @@
     toggle.setAttribute("aria-expanded", "false");
     toggle.setAttribute("aria-label", "Abrir menú");
     document.body.style.overflow = "";
+    setPageInert(false);
     var hide = function () { menu.hidden = true; menu.removeEventListener("transitionend", hide); };
     if (prefersReduced) hide();
     else menu.addEventListener("transitionend", hide);
