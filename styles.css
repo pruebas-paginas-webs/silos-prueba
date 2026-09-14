@@ -393,9 +393,9 @@ p { text-wrap: pretty; }
 .product-card { display: flex; flex-direction: column; gap: 0.85rem; }
 .product-media {
   aspect-ratio: 1 / 1; border-radius: var(--r-lg); overflow: hidden;
-  background: var(--panel); box-shadow: var(--shadow-xs);
+  background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow-xs);
 }
-.product-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease-out-soft); }
+.product-media img { width: 100%; height: 100%; object-fit: contain; transition: transform 0.6s var(--ease-out-soft); }
 .product-card:hover .product-media img { transform: scale(1.05); }
 .product-name { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; letter-spacing: -0.01em; }
 .product-note { color: var(--ink-soft); font-size: 0.9rem; }
