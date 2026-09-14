@@ -198,13 +198,8 @@ p { text-wrap: pretty; }
 }
 .header-inner { display: flex; align-items: center; gap: 1.5rem; min-height: 4.75rem; }
 
-.brand { display: inline-flex; align-items: center; gap: 0.6rem; text-decoration: none; color: var(--brand); }
-.brand-mark { width: 2.4rem; height: auto; }
-.brand-word {
-  font-family: var(--font-display); font-weight: 600; font-size: 1.45rem;
-  letter-spacing: -0.02em; color: var(--ink); white-space: nowrap;
-}
-.brand-word-sub { font-family: var(--font-body); font-weight: 500; font-size: 0.65em; color: var(--ink-soft); display: block; letter-spacing: 0; }
+.brand { display: inline-flex; align-items: center; text-decoration: none; }
+.brand-logo { height: 3.4rem; width: auto; }
 
 .nav { margin-left: auto; }
 .nav-list { display: flex; gap: 0.4rem; list-style: none; padding: 0; }
@@ -342,27 +337,6 @@ p { text-wrap: pretty; }
   .marquee-track [data-marquee-dup] { display: none; }
 }
 
-/* ----------------------------- Logo grids (marcas / clientes) ----------------------------- */
-.logo-grid {
-  list-style: none; padding: 0; margin: 0;
-  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px;
-  background: var(--line); border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden;
-}
-@media (min-width: 540px) { .logo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-@media (min-width: 820px) { .logo-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
-@media (min-width: 1040px) { #marcas .logo-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
-.logo-tile {
-  background: var(--surface); display: grid; place-items: center; min-width: 0;
-  min-height: clamp(92px, 11vw, 120px); padding: 1.1rem 1rem;
-  transition: background-color 0.3s var(--ease-out);
-}
-.logo-tile img {
-  max-height: 2.75rem; max-width: 82%; width: auto; height: auto; object-fit: contain;
-  transition: transform 0.4s var(--ease-out-soft);
-}
-.logo-tile:hover { background: var(--canvas); }
-.logo-tile:hover img { transform: scale(1.06); }
-
 /* ----------------------------- Pillars (datos del sitio) ----------------------------- */
 .pillars {
   list-style: none; padding: clamp(2rem, 4vw, 3rem) 0 0; margin: clamp(3rem, 6vw, 4.5rem) 0 0;
@@ -425,13 +399,6 @@ p { text-wrap: pretty; }
 .product-card:hover .product-media img { transform: scale(1.05); }
 .product-name { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; letter-spacing: -0.01em; }
 .product-note { color: var(--ink-soft); font-size: 0.9rem; }
-.products-more { margin-top: clamp(2.5rem, 5vw, 3.5rem); }
-.chip-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
-.chip {
-  display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0.5rem 1.1rem;
-  border: 1px solid var(--line-strong); border-radius: var(--r-pill); background: var(--surface);
-  font-family: var(--font-display); font-size: 1rem; color: var(--ink);
-}
 .products-cta { margin-top: clamp(2rem, 4vw, 3rem); text-align: center; }
 .products-cta-note { margin-top: 1rem; color: var(--ink-soft); font-size: 0.95rem; }
 .products-cta-note a { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 3px; }
@@ -468,6 +435,7 @@ p { text-wrap: pretty; }
   transition: background-color 0.3s var(--ease-out), color 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
 }
 .client-name-tile:hover { background: var(--canvas); color: var(--brand); border-color: var(--line-strong); }
+.client-name-tile img { max-height: 3rem; max-width: 78%; width: auto; height: auto; object-fit: contain; }
 
 /* ----------------------------- Brandcall (drenched band) ----------------------------- */
 .brandcall { position: relative; isolation: isolate; padding-block: clamp(4.5rem, 9vw, 8rem); color: var(--on-dark); background-color: var(--brand-deep); }
@@ -527,5 +495,5 @@ p { text-wrap: pretty; }
   *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
   [data-reveal] { opacity: 1; transform: none; filter: none; }
   .mobile-menu[data-open] .mobile-nav a { opacity: 1; transform: none; }
-  .btn:hover, .logo-tile:hover img, .product-card:hover .product-media img, .client-name-tile:hover { transform: none; }
+  .btn:hover, .product-card:hover .product-media img, .client-name-tile:hover { transform: none; }
 }
