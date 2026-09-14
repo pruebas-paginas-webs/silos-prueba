@@ -91,9 +91,10 @@
     <span id="top"></span>
 
     <!-- ============================= HERO ============================= -->
-    <!-- PENDIENTE: foto de hero (ver PLAN.md → Brief de fotos). Mientras tanto, fondo sólido de marca. -->
+    <!-- PENDIENTE: foto de hero (ver PLAN.md → Brief de fotos). Mientras tanto: fondo de marca + isotipo en marca de agua. -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media">
+        <img class="hero-mark" src="assets/logo/isotipo-claro-512.png" alt="" width="512" height="512" />
         <div class="hero-scrim" aria-hidden="true"></div>
       </div>
 
@@ -128,13 +129,6 @@
             prestigiosas, pensados para los clientes y consumidores más exigentes de Paraguay.
           </p>
         </header>
-
-        <div class="about-cta" data-reveal>
-          <a class="btn btn-primary" href="mailto:jvanden@silospy.com?subject=Consulta%20desde%20la%20web">
-            <span>Escribinos</span>
-            <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          </a>
-        </div>
 
         <ul class="pillars" data-reveal>
           <li><span class="pillar-k">Desde 2021</span><span class="pillar-v">Operando en Paraguay</span></li>
@@ -175,7 +169,7 @@
         </header>
 
         <ul class="origins-list" data-reveal>
-          <li><span class="origin-country">Dinamarca</span><span class="origin-detail">Especialidades seleccionadas.</span></li>
+          <li><span class="origin-country">Dinamarca</span><span class="origin-detail">Azul, brie, camembert y feta.</span></li>
           <li><span class="origin-country">España</span><span class="origin-detail">Jamón serrano y embutidos curados.</span></li>
           <li><span class="origin-country">Italia</span><span class="origin-detail">Grana padano y clásicos italianos.</span></li>
           <li><span class="origin-country">Países Bajos</span><span class="origin-detail">Quesos de tradición holandesa.</span></li>
@@ -193,56 +187,50 @@
           <p class="section-sub" data-reveal>Los clásicos que no pueden faltar en tu góndola ni en tu carta.</p>
         </header>
 
-        <!-- PENDIENTE: fotos de los 8 productos (ver PLAN.md → Brief de fotos, ChatGPT). Tarjetas sin imagen mientras tanto. -->
+        <!-- Cards solo para productos CON foto real. Los 7 favoritos sin foto van como lista
+             tipográfica abajo y pasan a card cuando llegue su foto (ver PLAN.md → Brief de fotos). -->
         <ul class="products-grid" data-reveal>
           <li class="product-card">
-            <div class="product-media"></div>
-            <h3 class="product-name">Brie</h3>
-            <p class="product-note">Cremoso, de corteza blanca y corazón suave.</p>
+            <div class="product-media"><img src="assets/img/old-amsterdam.webp" alt="Queso Old Amsterdam" width="1200" height="1017" loading="lazy" /></div>
+            <h3 class="product-name">Old Amsterdam</h3>
+            <p class="product-note">Gouda madurado de carácter intenso. Westland · Países Bajos.</p>
           </li>
           <li class="product-card">
-            <div class="product-media"></div>
-            <h3 class="product-name">Cheddar inglés</h3>
-            <p class="product-note">Intenso y con carácter, como debe ser.</p>
+            <div class="product-media"><img src="assets/img/montana-intenso.webp" alt="Queso Montana Intenso" width="1200" height="1052" loading="lazy" /></div>
+            <h3 class="product-name">Montana Intenso</h3>
+            <p class="product-note">Queso duro de estilo italiano, hecho en Holanda. Veldhuyzen Kaas.</p>
           </li>
           <li class="product-card">
-            <div class="product-media"></div>
-            <h3 class="product-name">Queso azul</h3>
-            <p class="product-note">Para los que saben lo que buscan.</p>
+            <div class="product-media"><img src="assets/img/basiron-olive-tomato.webp" alt="Queso Basiron Olive Tomato" width="1200" height="1032" loading="lazy" /></div>
+            <h3 class="product-name">Basiron Olive Tomato</h3>
+            <p class="product-note">Semiduro con aceitunas y tomate. Veldhuyzen Kaas.</p>
           </li>
           <li class="product-card">
-            <div class="product-media"></div>
-            <h3 class="product-name">Grana padano</h3>
-            <p class="product-note">El clásico italiano: para rallar, lascar y no compartir.</p>
-          </li>
-          <li class="product-card">
-            <div class="product-media"></div>
-            <h3 class="product-name">Jamón serrano</h3>
-            <p class="product-note">Curado con paciencia, cortado fino.</p>
-          </li>
-          <li class="product-card">
-            <div class="product-media"></div>
-            <h3 class="product-name">Chorizo Arroyo</h3>
-            <p class="product-note">El clásico español de Jamones Arroyo.</p>
-          </li>
-          <li class="product-card">
-            <div class="product-media"></div>
-            <h3 class="product-name">Jamón cocido</h3>
-            <p class="product-note">El infaltable de toda picada.</p>
-          </li>
-          <li class="product-card">
-            <!-- PENDIENTE cliente: falta definir el 8º producto -->
-            <div class="product-media"></div>
-            <h3 class="product-name">Próximamente</h3>
-            <p class="product-note">Estamos sumando un nuevo producto a la selección.</p>
+            <div class="product-media"><img src="assets/img/basiron-pesto-verde.webp" alt="Queso Basiron Pesto Verde" width="1086" height="1448" loading="lazy" /></div>
+            <h3 class="product-name">Basiron Pesto Verde</h3>
+            <p class="product-note">Semiduro con pesto verde. Veldhuyzen Kaas.</p>
           </li>
         </ul>
+
+        <div class="products-more" data-reveal>
+          <p class="clients-group-title">Y los clásicos que no pueden faltar</p>
+          <ul class="chip-list">
+            <li class="chip">Brie</li>
+            <li class="chip">Cheddar inglés</li>
+            <li class="chip">Queso azul</li>
+            <li class="chip">Grana padano</li>
+            <li class="chip">Jamón serrano</li>
+            <li class="chip">Chorizo Arroyo</li>
+            <li class="chip">Jamón cocido</li>
+          </ul>
+        </div>
 
         <div class="products-cta" data-reveal>
           <a class="btn btn-ghost" href="mailto:jvanden@silospy.com?subject=Consulta%20de%20productos">
             <span>Consultá disponibilidad</span>
             <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           </a>
+          <p class="products-cta-note">¿Querés ver todo lo que traemos? <a href="mailto:jvanden@silospy.com?subject=Quiero%20el%20cat%C3%A1logo%20completo">Pedinos el catálogo completo</a>.</p>
         </div>
       </div>
     </section>
@@ -284,29 +272,6 @@
             </div>
           </div>
         </div>
-
-        <ul class="products-grid" data-reveal>
-          <li class="product-card">
-            <div class="product-media"><img src="assets/img/montana-intenso.webp" alt="Queso Montana Intenso" loading="lazy" /></div>
-            <h3 class="product-name">Montana</h3>
-            <p class="product-note">Veldhuyzen Kaas · Países Bajos</p>
-          </li>
-          <li class="product-card">
-            <div class="product-media"><img src="assets/img/basiron-olive-tomato.webp" alt="Queso Basiron Olive Tomato" loading="lazy" /></div>
-            <h3 class="product-name">Basiron Olive Tomato</h3>
-            <p class="product-note">Veldhuyzen Kaas · Países Bajos</p>
-          </li>
-          <li class="product-card">
-            <div class="product-media"><img src="assets/img/basiron-pesto-verde.webp" alt="Queso Basiron Pesto Verde" loading="lazy" /></div>
-            <h3 class="product-name">Basiron Pesto Verde</h3>
-            <p class="product-note">Veldhuyzen Kaas · Países Bajos</p>
-          </li>
-          <li class="product-card">
-            <div class="product-media"><img src="assets/img/old-amsterdam.webp" alt="Queso Old Amsterdam" loading="lazy" /></div>
-            <h3 class="product-name">Old Amsterdam</h3>
-            <p class="product-note">Westland · Países Bajos</p>
-          </li>
-        </ul>
       </div>
     </section>
 
