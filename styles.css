@@ -323,6 +323,7 @@ p { text-wrap: pretty; }
 .marquee-set img {
   height: clamp(2.25rem, 4vw, 3rem); width: auto; max-width: 11rem; object-fit: contain;
 }
+.marquee-set img.lg { height: clamp(2.9rem, 5vw, 3.75rem); }
 .marquee-chip-dark {
   display: inline-flex; align-items: center;
   background: var(--brand); border-radius: var(--r-sm);
