@@ -127,9 +127,9 @@ p { text-wrap: pretty; }
 
 /* ----------------------------- Layout ----------------------------- */
 .container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
-.section { padding-block: clamp(4.5rem, 8vw, 8rem); }
+.section { padding-block: clamp(3.5rem, 6vw, 5.5rem); }
 .section-panel { background: var(--panel); }
-.section-head { max-width: 46rem; margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+.section-head { max-width: 46rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
 .section-sub { color: var(--ink-soft); margin-top: 0.9rem; font-size: 1.1rem; max-width: 50ch; }
 
 .skip-link {
@@ -305,7 +305,6 @@ p { text-wrap: pretty; }
 .brands-marquee {
   --marquee-gap: clamp(3rem, 6vw, 5rem);
   overflow: hidden;
-  margin-bottom: clamp(2.5rem, 5vw, 4rem);
   -webkit-mask-image: linear-gradient(to right, transparent, black 7%, black 93%, transparent);
   mask-image: linear-gradient(to right, transparent, black 7%, black 93%, transparent);
 }
@@ -340,7 +339,7 @@ p { text-wrap: pretty; }
 
 /* ----------------------------- Pillars (datos del sitio) ----------------------------- */
 .pillars {
-  list-style: none; padding: clamp(2rem, 4vw, 3rem) 0 0; margin: clamp(3rem, 6vw, 4.5rem) 0 0;
+  list-style: none; padding: clamp(1.75rem, 3vw, 2.5rem) 0 0; margin: clamp(2rem, 4vw, 3rem) 0 0;
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.75rem 1.5rem;
   border-top: 1px solid var(--line);
 }
@@ -352,7 +351,7 @@ p { text-wrap: pretty; }
 .about-cta { margin-top: 2rem; }
 
 /* ----------------------------- Valores (banda drenched) ----------------------------- */
-.values-band { background: var(--brand-deep); color: var(--on-dark); padding-block: clamp(3rem, 6vw, 5rem); }
+.values-band { background: var(--brand-deep); color: var(--on-dark); padding-block: clamp(2.5rem, 5vw, 4rem); }
 .values-grid {
   list-style: none; padding: 0; margin: 0;
   display: grid; grid-template-columns: 1fr; gap: 2.25rem;
@@ -439,7 +438,7 @@ p { text-wrap: pretty; }
 .client-name-tile img { max-height: 3rem; max-width: 78%; width: auto; height: auto; object-fit: contain; }
 
 /* ----------------------------- Brandcall (drenched band) ----------------------------- */
-.brandcall { position: relative; isolation: isolate; padding-block: clamp(4.5rem, 9vw, 8rem); color: var(--on-dark); background-color: var(--brand-deep); }
+.brandcall { position: relative; isolation: isolate; padding-block: clamp(3.5rem, 7vw, 6rem); color: var(--on-dark); background-color: var(--brand-deep); }
 .brandcall-inner { position: relative; max-width: 44rem; text-align: center; }
 .brandcall-title { font-size: clamp(1.9rem, 1.3rem + 2.8vw, 3.25rem); color: #fff; line-height: 1.06; letter-spacing: -0.025em; }
 .brandcall-lead { margin: 1.25rem auto 0; color: var(--on-dark-soft); font-size: clamp(1.05rem, 1rem + 0.4vw, 1.25rem); max-width: 44ch; }

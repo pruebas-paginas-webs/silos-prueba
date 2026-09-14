@@ -13,3 +13,6 @@ Fotos del cliente/
 Thumbs.db
 .DS_Store
 desktop.ini
+
+# Carpeta de trabajo de otra sesion (renders del catalogo con precios)
+tmp/
