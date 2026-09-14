@@ -455,7 +455,7 @@ p { text-wrap: pretty; }
 }
 .contact-email:hover { text-decoration-color: var(--brand); }
 .contact-phone { margin-top: 1rem; color: var(--ink-soft); font-size: 1.05rem; }
-.contact-phone a { text-decoration: underline; text-underline-offset: 3px; }
+.contact-phone a { text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
 
 /* ----------------------------- Footer ----------------------------- */
 .site-footer { background: var(--brand-deeper); color: var(--on-dark-soft); padding-top: clamp(3rem, 6vw, 5rem); }
