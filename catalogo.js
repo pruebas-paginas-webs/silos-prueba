@@ -16,17 +16,28 @@
     catalog: document.querySelector("[data-catalog]"),
     filters: document.querySelector("[data-filters]"),
     printBtn: document.querySelector("[data-print]"),
+    printHint: document.querySelector("[data-print-hint]"),
     printDate: document.querySelector("[data-print-date]"),
     priceNote: document.querySelector("[data-print-price-note]")
   };
 
-  // Los precios solo se muestran si: hay sesión de admin en este navegador (la crea admin.html)
-  // Y la URL trae ?precios=1. ?pdf=1 imprime automáticamente al terminar de cargar.
+  // El PDF es solo para el administrador: el visitante navega el catálogo en la web.
+  // La sesión de admin la crea admin.html; los precios además exigen ?precios=1.
   var params = new URLSearchParams(location.search);
   var isAdmin = !!localStorage.getItem("silosAdmin");
   var showPrices = isAdmin && params.get("precios") === "1";
-  var autoPrint = params.get("pdf") === "1";
+  var autoPrint = isAdmin && params.get("pdf") === "1";
   var state = { items: [], filter: "todas" };
+
+  // Sin sesión de admin: se oculta la exportación y se limpia la URL (?pdf, ?precios, ?formato)
+  // para que el visitante quede simplemente en la página del catálogo.
+  if (!isAdmin) {
+    if (els.printBtn) els.printBtn.hidden = true;
+    if (els.printHint) els.printHint.hidden = true;
+    if (params.has("pdf") || params.has("precios") || params.has("formato")) {
+      history.replaceState(null, "", location.pathname);
+    }
+  }
 
   // Formato del PDF: "movil" (página vertical tipo celular, 2 columnas, ideal para WhatsApp)
   // o "a4" (3 columnas, para imprimir). ?formato=movil|a4; si no viene, según el dispositivo.

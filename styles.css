@@ -498,6 +498,8 @@ p { text-wrap: pretty; }
 
 /* ----------------------------- Catálogo (público) ----------------------------- */
 .catalog-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+/* .btn trae display:inline-flex, que le gana al atributo [hidden] del visitante sin sesión */
+.catalog-actions .btn[hidden], .catalog-hint[hidden] { display: none !important; }
 .catalog-hint { margin-top: 0.75rem; font-size: 0.85rem; color: var(--ink-mute); }
 .catalog-filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
 .chip-btn {
