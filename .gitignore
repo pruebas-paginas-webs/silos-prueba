@@ -16,3 +16,8 @@ desktop.ini
 
 # Carpeta de trabajo de otra sesion (renders del catalogo con precios)
 tmp/
+
+PLAN-CATALOGO.md
+
+# Tiene la clave real del panel de administracion: solo va al hosting, nunca al repo
+api/

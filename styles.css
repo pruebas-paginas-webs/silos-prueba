@@ -247,9 +247,10 @@ p { text-wrap: pretty; }
 .mobile-nav a:nth-child(4) { animation-delay: 0.26s; }
 .mobile-nav a:nth-child(5) { animation-delay: 0.32s; }
 .mobile-nav a:nth-child(6) { animation-delay: 0.38s; }
+.mobile-nav a:nth-child(7) { animation-delay: 0.44s; }
 .mobile-nav a:hover { color: var(--accent-light); }
 .mobile-cta { margin-top: 1.25rem; font-size: 1rem; font-family: var(--font-body); }
-.mobile-menu[data-open] .mobile-cta { animation-delay: 0.46s; }
+.mobile-menu[data-open] .mobile-cta { animation-delay: 0.52s; }
 
 @keyframes mm-in { to { opacity: 1; transform: translateY(0); } }
 
@@ -493,4 +494,148 @@ p { text-wrap: pretty; }
   [data-reveal] { opacity: 1; transform: none; filter: none; }
   .mobile-menu[data-open] .mobile-nav a { opacity: 1; transform: none; }
   .btn:hover, .product-card:hover .product-media img, .client-name-tile:hover { transform: none; }
+}
+
+/* ----------------------------- Catálogo (público) ----------------------------- */
+.catalog-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.catalog-hint { margin-top: 0.75rem; font-size: 0.85rem; color: var(--ink-mute); }
+.catalog-filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
+.chip-btn {
+  border: 1px solid var(--line-strong); background: var(--surface); border-radius: var(--r-pill);
+  padding: 0.5rem 1rem; font-family: var(--font-body); font-weight: 600; font-size: 0.9rem; color: var(--ink-soft);
+  transition: background-color 0.3s var(--ease-out), color 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
+}
+.chip-btn:hover { border-color: var(--brand); color: var(--brand); }
+.chip-btn[aria-pressed="true"] { background: var(--brand); color: var(--on-dark); border-color: var(--brand); }
+.catalog-status { color: var(--ink-soft); }
+.catalog-status[hidden] { display: none; }
+.catalog-group + .catalog-group { margin-top: clamp(2.5rem, 5vw, 4rem); }
+.catalog-group h2 { font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2.1rem); margin-bottom: 0.35rem; }
+.catalog-group-sub { color: var(--ink-soft); font-size: 0.92rem; margin: 0 0 1.25rem; }
+.catalog-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1rem, 2.5vw, 1.75rem); }
+@media (min-width: 640px) { .catalog-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 960px) { .catalog-grid { grid-template-columns: repeat(4, 1fr); } }
+.catalog-card { gap: 0.5rem; }
+.catalog-meta { color: var(--ink-soft); font-size: 0.9rem; }
+.catalog-placeholder {
+  display: grid; place-items: center; height: 100%; padding: 1rem; text-align: center;
+  color: var(--ink-mute); font-family: var(--font-display); font-size: 1.05rem; background: var(--panel);
+}
+.catalog-price { display: none; font-family: var(--font-display); font-weight: 600; font-size: 1.1rem; color: var(--accent-ink); }
+body.show-prices .catalog-price { display: block; }
+.catalog-card .product-media { position: relative; }
+.badge-nostock {
+  position: absolute; top: 0.6rem; left: 0.6rem; z-index: 1;
+  background: var(--brand); color: #fff; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 0.3rem 0.6rem; border-radius: var(--r-pill);
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.is-nostock .product-media img { opacity: 0.45; filter: grayscale(1); }
+.print-only { display: none; }
+
+/* ----------------------------- Panel de administración ----------------------------- */
+.admin-page .header-inner { gap: 1rem; }
+.admin-title { margin-left: 0.5rem; font-family: var(--font-display); font-size: 1.1rem; color: var(--ink-soft); }
+.admin-view { margin-left: auto; }
+.admin-login { max-width: 26rem; }
+.admin-login-form { display: flex; gap: 0.6rem; margin-top: 1.5rem; }
+.admin-input {
+  width: 100%; min-height: 2.75rem; padding: 0.55rem 0.8rem; font: inherit; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line-strong); border-radius: var(--r-sm);
+}
+.admin-input:focus { outline: 2px solid var(--brand); outline-offset: 1px; }
+.admin-toolbar {
+  position: sticky; top: 4.75rem; z-index: 5; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem;
+  padding: 0.9rem 1rem; margin-bottom: 1.5rem; background: var(--brand-tint); border: 1px solid var(--line); border-radius: var(--r-md);
+}
+.admin-status { width: 100%; margin: 0; font-size: 0.92rem; color: var(--ink-soft); }
+.admin-status.is-ok { color: var(--accent-ink); }
+.admin-status.is-warn { color: oklch(0.5 0.12 60); }
+.admin-status.is-error { color: oklch(0.5 0.16 25); }
+.admin-status:empty { display: none; }
+.admin-link { font: inherit; font-weight: 600; color: var(--accent-ink); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.admin-delete { color: oklch(0.5 0.16 25); justify-self: start; }
+.admin-radios { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; font-size: 0.92rem; font-weight: 600; }
+.admin-radios label { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 500; }
+.switch { display: inline-flex; align-items: center; gap: 0.55rem; cursor: pointer; font-weight: 600; }
+.switch input {
+  appearance: none; -webkit-appearance: none; width: 2.6rem; height: 1.45rem; margin: 0; cursor: pointer;
+  background: var(--line-strong); border-radius: 999px; position: relative; transition: background-color 0.3s var(--ease-out);
+}
+.switch input::after {
+  content: ""; position: absolute; top: 0.15rem; left: 0.15rem; width: 1.15rem; height: 1.15rem; border-radius: 50%;
+  background: #fff; box-shadow: var(--shadow-xs); transition: transform 0.3s var(--ease-out-soft);
+}
+.switch input:checked { background: var(--accent-ink); }
+.switch input:checked::after { transform: translateX(1.15rem); }
+.admin-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+.admin-row {
+  display: grid; grid-template-columns: 1fr; gap: 1rem; padding: 1rem;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg);
+}
+@media (min-width: 760px) { .admin-row { grid-template-columns: 9rem 1fr; } }
+.admin-row-media { display: grid; gap: 0.5rem; align-content: start; }
+.admin-thumb, .admin-thumb-empty { width: 100%; aspect-ratio: 1 / 1; border-radius: var(--r-md); border: 1px solid var(--line); object-fit: contain; background: #fff; }
+.admin-thumb-empty { display: grid; place-items: center; color: var(--ink-mute); font-size: 0.85rem; }
+.admin-thumb-empty[hidden] { display: none; }
+.admin-upload { justify-content: center; cursor: pointer; }
+.admin-row-fields { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem 1rem; align-items: end; }
+@media (min-width: 900px) { .admin-row-fields { grid-template-columns: repeat(4, 1fr); } }
+.admin-field { display: grid; gap: 0.3rem; font-size: 0.85rem; color: var(--ink-soft); }
+.admin-field-wide { grid-column: 1 / -1; }
+.admin-check { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; font-size: 0.92rem; }
+.admin-help { margin-top: 2rem; color: var(--ink-soft); font-size: 0.92rem; max-width: 60ch; }
+
+/* ----------------------------- Impresión / PDF del catálogo ----------------------------- */
+/* Diseño definido con Agustín (ver sección "Diseño del PDF"): portada carbón con logo crema,
+   páginas interiores blancas, 3 columnas, sin cabeceras/pies repetidos (Chrome los superpone). */
+@media print {
+  @page { size: A4; margin: 12mm; }
+  html { scroll-behavior: auto; }
+  body { background: #fff; color: #2B2D42; font-size: 10pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .site-header, .mobile-menu, .site-footer, .skip-link, .catalog-actions, .catalog-hint, .catalog-filters, .catalog-status, .catalog-head { display: none !important; }
+  .print-only { display: block; }
+  /* Portada: ocupa la página 1 completa, fondo carbón (sangra hasta el borde con márgenes negativos) */
+  .print-cover {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    box-sizing: border-box; height: 297mm; margin: -12mm -12mm 0; padding: 20mm;
+    background: #2B2D42; color: #F4F1EA; position: relative;
+    break-after: page; page-break-after: always;
+  }
+  .print-cover img { height: 32mm; width: auto; margin: 0 auto 14mm; content: url("assets/logo/silos-paraguay-claro.png"); }
+  .print-cover h1 { color: #F4F1EA; font-size: 30pt; line-height: 1.05; margin: 0 0 4mm; letter-spacing: -0.01em; }
+  .print-cover h1::before { content: ""; display: block; width: 22mm; height: 1px; background: #6B8E80; margin: 0 auto 10mm; }
+  .print-cover-sub { font-size: 12.5pt; color: #BFD1C9; margin: 0 0 3mm; }
+  .print-cover [data-print-date] { font-size: 10pt; color: #BFD1C9; }
+  .print-cover-contact { position: absolute; left: 20mm; right: 20mm; bottom: 18mm; font-size: 9.5pt; line-height: 1.7; color: #BFD1C9; }
+  .print-cover-note { position: absolute; left: 20mm; right: 20mm; bottom: 10mm; font-size: 8pt; color: #9AC2B1; }
+  .print-cover-note[hidden] { display: none; }
+  /* Páginas interiores */
+  .section { padding: 0; }
+  .section-panel { background: #fff; }
+  .catalog-body { padding-top: 4mm; }
+  .catalog-group + .catalog-group { margin-top: 12mm; }
+  .catalog-group h2 { font-size: 17pt; margin-bottom: 1.5mm; break-after: avoid; page-break-after: avoid; }
+  .catalog-group-sub { font-size: 9pt; color: #525466; margin: 0 0 5mm; break-after: avoid; page-break-after: avoid; }
+  .catalog-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 6mm 5mm; }
+  .catalog-card { break-inside: avoid; page-break-inside: avoid; }
+  .product-media { border: 1px solid #D9DAD1; box-shadow: none; border-radius: 3mm; background: #fff; }
+  .catalog-placeholder { background: #ECEADF; color: #8a8c98; font-size: 9.5pt; }
+  .product-name { font-size: 10.5pt; margin-top: 1mm; }
+  .catalog-meta, .product-note { font-size: 8pt; line-height: 1.45; }
+  .catalog-price { font-size: 10.5pt; margin-top: 1mm; }
+  .badge-nostock { font-size: 7pt; top: 2.5mm; left: 2.5mm; }
+  [data-reveal] { opacity: 1 !important; transform: none !important; filter: none !important; }
+  /* Formato celular (body.pdf-movil): página 108×230 mm (proporción de celular), 2 columnas, 6 productos por página */
+  body.pdf-movil .print-cover { height: 230mm; margin: -8mm -8mm 0; padding: 12mm; }
+  body.pdf-movil .print-cover img { height: 24mm; margin-bottom: 10mm; }
+  body.pdf-movil .print-cover h1 { font-size: 20pt; }
+  body.pdf-movil .print-cover h1::before { margin-bottom: 7mm; }
+  body.pdf-movil .print-cover-sub { font-size: 9.5pt; }
+  body.pdf-movil .print-cover-contact { left: 10mm; right: 10mm; bottom: 14mm; font-size: 8pt; }
+  body.pdf-movil .print-cover-note { left: 10mm; right: 10mm; bottom: 7mm; font-size: 6.5pt; }
+  body.pdf-movil .catalog-group h2 { font-size: 14pt; }
+  body.pdf-movil .catalog-group-sub { font-size: 8.5pt; }
+  body.pdf-movil .catalog-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 5mm 4mm; }
+  body.pdf-movil .product-name { font-size: 10pt; }
 }
