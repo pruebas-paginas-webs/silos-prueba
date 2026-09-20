@@ -1,0 +1,9 @@
+/* Base del encuadre de fotos.
+
+   El encuadre de cada foto ya no vive acá: viaja con el producto desde la base
+   y lo aplica catalogo.js (y apply-framing.js en el PDF). Estas reglas son el
+   punto de partida y el resultado seguro si algo falla: foto entera, centrada
+   y con el mismo margen que el resto. */
+.product-media{position:relative}
+.product-media img{position:absolute;width:84%;height:84%;left:8%;top:8%;max-width:none;max-height:none;object-fit:contain}
+.product-card:hover .product-media img{transform:none}

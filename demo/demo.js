@@ -16,6 +16,7 @@
   var DEMO = (window.DEMO = {});
   var state = null;          // {products:[...], settings:{...}}
   var mediaUrls = {};        // id -> blob URL de fotos subidas en la demo
+  var seedFrames = {};       // id -> encuadre de las fotos del catálogo inicial
   var authed = false;
 
   /* ---------------- IndexedDB ---------------- */
@@ -55,16 +56,19 @@
 
   function loadSeed() {
     return fetch(SEED_URL, { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (seed) {
-      return { products: seed.products.map(function (p) { return Object.assign({}, p); }), settings: Object.assign({}, seed.settings) };
+      return { products: seed.products.map(function (p) { return Object.assign({}, p); }), settings: Object.assign({}, seed.settings), updates: seed.updates, frames: seed.frames };
     });
   }
 
   var readyPromise = null;
   function ready() {
     if (readyPromise) return readyPromise;
-    readyPromise = kvGet('state').then(function (row) {
-      if (row && row.v && Array.isArray(row.v.products) && row.v.products.length) { state = row.v; return; }
-      return loadSeed().then(function (fresh) { state = fresh; return persist(); });
+    readyPromise = Promise.all([kvGet('state'), loadSeed(), import('./demo-seed-update.js')]).then(function (values) {
+      var row=values[0],fresh=values[1],merge=values[2].mergeSeedUpdate;
+      seedFrames = (fresh && fresh.frames) || {};
+      if (row && row.v && Array.isArray(row.v.products) && row.v.products.length) state=merge(row.v,fresh);
+      else {state=fresh;state.settings.demoContentVersion=fresh.updates && fresh.updates.version;}
+      return persist();
     }).then(function () {
       return mediaAll();
     }).then(function (items) {
@@ -90,6 +94,50 @@
 
   /* ---------------- Fotos ---------------- */
   // Devuelve la URL de una foto. Sincrónica: la usa el front directamente en img.src.
+  /* ---------------- Encuadre de fotos ----------------
+     Los del catálogo inicial llegan con el seed y se actualizan con él. Los que
+     el visitante sube o ajusta viven en su copia y siempre tienen prioridad. */
+  function frames() { state.settings.frames = state.settings.frames || {}; return state.settings.frames; }
+  function frameFor(id) {
+    if (!id) return null;
+    var propio = frames()[id];
+    var f = propio && (propio.manual || propio.auto);
+    if (f) return { x: f.x, y: f.y, w: f.w, h: f.h, r: propio.r || 1 };
+    var s = seedFrames[id];
+    return s ? { x: s.x, y: s.y, w: s.w, h: s.h, r: s.r || 1 } : null;
+  }
+  function frameIsManual(id) { var p = frames()[id]; return !!(p && p.manual); }
+
+  /* Mide el vacío igual que el servidor: misma muestra, mismo umbral, mismas
+     salvaguardas. Ante la duda, la foto entera. */
+  function detectFrame(img) {
+    var COMPLETA = { x: 0, y: 0, w: 1, h: 1, source: 'full' };
+    try {
+      var k = Math.min(500 / img.width, 500 / img.height, 1);
+      var W = Math.max(1, Math.round(img.width * k)), H = Math.max(1, Math.round(img.height * k));
+      var c = document.createElement('canvas'); c.width = W; c.height = H;
+      var ctx = c.getContext('2d', { willReadFrequently: true });
+      ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, W, H);      // la transparencia es fondo vacío
+      ctx.drawImage(img, 0, 0, W, H);
+      var d = ctx.getImageData(0, 0, W, H).data;
+      var cols = new Uint32Array(W), rows = new Uint32Array(H), tinta = 0;
+      for (var y = 0; y < H; y++) for (var x = 0; x < W; x++) {
+        var i = (y * W + x) * 4;
+        if (Math.min(d[i], d[i + 1], d[i + 2]) < 225) { cols[x]++; rows[y]++; tinta++; }
+      }
+      var minCol = Math.max(2, H * 0.008), minRow = Math.max(2, W * 0.008);
+      var left = -1, right = -1, top = -1, bottom = -1;
+      for (var x2 = 0; x2 < W; x2++) if (cols[x2] > minCol) { if (left < 0) left = x2; right = x2; }
+      for (var y2 = 0; y2 < H; y2++) if (rows[y2] > minRow) { if (top < 0) top = y2; bottom = y2; }
+      if (left < 0 || top < 0) return COMPLETA;
+      left = Math.max(0, left - 4); top = Math.max(0, top - 4);
+      right = Math.min(W, right + 4 + 1); bottom = Math.min(H, bottom + 4 + 1);
+      var f = { x: left / W, y: top / H, w: (right - left) / W, h: (bottom - top) / H, source: 'auto' };
+      if ((f.w > 0.97 && f.h > 0.97) || tinta / (W * H) > 0.9 || f.w < 0.05 || f.h < 0.05) return COMPLETA;
+      return f;
+    } catch (e) { return COMPLETA; }
+  }
+
   DEMO.media = function (id, variant) {
     if (!id) return '';
     if (mediaUrls[id]) return mediaUrls[id];              // foto subida en la demo
@@ -256,6 +304,7 @@
           id: p.id, producto: p.producto, categoria: p.categoria, marca: p.marca, origen: p.origen,
           presentacion: p.presentacion, notas: p.notas, resumen: p.resumen, stock: p.stock, por_kg: p.por_kg,
           imagen: p.imagen_id ? DEMO.media(p.imagen_id, 'web') : null,
+          encuadre: frameFor(p.imagen_id),
           destacado: p.destacado, featuredOrder: s.featured.indexOf(p.id)
         };
         if (s.mostrar_precios) out.precio = p.precio;
@@ -270,7 +319,7 @@
     var counts = {
       total: active().length,
       visible: active().filter(function (p) { return p.visible; }).length,
-      noStock: active().filter(function (p) { return !p.stock; }).length,
+      noStock: active().filter(function (p) { return p.stock===false; }).length,
       noPhoto: active().filter(function (p) { return !p.imagen_id; }).length
     };
     items = items.filter(function (p) { return query.status === 'archived' ? !!p.archived_at : !p.archived_at; })
@@ -278,10 +327,11 @@
       .filter(function (p) { return !query.category || p.categoria === query.category; })
       .filter(function (p) {
         return query.status === 'hidden' ? !p.visible
-          : query.status === 'nostock' ? !p.stock
+          : query.status === 'nostock' ? p.stock===false
             : query.status === 'nophoto' ? !p.imagen_id : true;
       });
-    return { items: ordered(items), total: items.length, counts: counts, settings: settings() };
+    return { items: ordered(items).map(function (p) { return Object.assign({}, p, { encuadre: frameFor(p.imagen_id) }); }),
+             total: items.length, counts: counts, settings: settings() };
   }
 
   /* ---------------- Subida de fotos (canvas → blob → IndexedDB) ---------------- */
@@ -299,9 +349,10 @@
           ctx.drawImage(img, 0, 0, c.width, c.height);
           return new Promise(function (res) { c.toBlob(res, 'image/jpeg', 0.85); });
         }
+        var frame = detectFrame(img);
         Promise.all([draw(1000), draw(320)]).then(function (out) {
           URL.revokeObjectURL(url);
-          resolve({ web: out[0], thumb: out[1], width: img.width, height: img.height });
+          resolve({ web: out[0], thumb: out[1], width: img.width, height: img.height, frame: frame });
         });
       };
       img.onerror = function () { URL.revokeObjectURL(url); reject(invalid('No pudimos leer esta foto. Elegí un JPG, PNG o WebP.')); };
@@ -315,9 +366,10 @@
       var id = uuid();
       return mediaPut({ id: id, web: out.web, thumb: out.thumb }).then(function () {
         mediaUrls[id] = URL.createObjectURL(out.web);
+        frames()[id] = { auto: out.frame, manual: null, r: out.width / out.height };
         return {
-          mediaId: id, status: 'ready',
-          files: { web: { size: out.web.size, width: 1000, height: 1000 }, thumb: { size: out.thumb.size, width: 320, height: 320 } },
+          mediaId: id, status: 'ready', frame: out.frame,
+          files: { web: { size: out.web.size, width: out.width, height: out.height }, thumb: { size: out.thumb.size, width: 320, height: 320 } },
           warning: Math.max(out.width, out.height) < 600 ? 'La foto es pequeña; puede verse poco nítida.' : null
         };
       });
@@ -528,6 +580,31 @@
     }
     if (rest === 'featured' && method === 'PUT') return setFeatured(body.ids, body.revision, body.mostrar_destacados);
 
+    var mFrame = rest.match(/^media\/([^/]+)\/frame$/);
+    if (mFrame) {
+      var fid = mFrame[1];
+      if (!frameFor(fid)) throw err(404, 'NO_EXISTE', 'Esa foto ya no está disponible.');
+      if (method === 'GET') return { mediaId: fid, frame: frameFor(fid), manual: frameIsManual(fid), r: frameFor(fid).r };
+      if (method === 'PUT') {
+        var nuevo = body && body.frame;
+        var actual = frames()[fid] || { auto: null, manual: null, r: (frameFor(fid) || {}).r || 1 };
+        if (nuevo === null || nuevo === undefined) actual.manual = null;     // volver al automático
+        else {
+          for (var k of ['x', 'y', 'w', 'h']) if (typeof nuevo[k] !== 'number' || !isFinite(nuevo[k]))
+            throw invalid('No pudimos guardar el encuadre. Volvé a intentarlo.');
+          if (!(nuevo.w > 0) || !(nuevo.h > 0) || nuevo.w > 8 || nuevo.h > 8)
+            throw invalid('Ese encuadre queda fuera de la foto. Probá de nuevo.');
+          actual.manual = { x: nuevo.x, y: nuevo.y, w: nuevo.w, h: nuevo.h, source: 'manual' };
+        }
+        // Si es una foto del catálogo inicial, su encuadre de origen queda como respaldo.
+        if (!actual.auto && seedFrames[fid]) actual.auto = { x: seedFrames[fid].x, y: seedFrames[fid].y, w: seedFrames[fid].w, h: seedFrames[fid].h, source: 'auto' };
+        actual.r = actual.r || (seedFrames[fid] && seedFrames[fid].r) || 1;
+        frames()[fid] = actual;
+        if (!actual.manual && !actual.auto) delete frames()[fid];
+        bump();
+        return { mediaId: fid, frame: frameFor(fid), manual: frameIsManual(fid), settings: settings() };
+      }
+    }
     if (rest === 'media' && method === 'POST') {
       var fd = init && init.body;
       var file = fd && fd.get ? fd.get('foto') : null;

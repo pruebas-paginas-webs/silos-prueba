@@ -41,3 +41,25 @@ dialog{max-width:calc(100vw - 32px)}#editor{overflow:hidden}#editor-scroll{overf
 #pdf-options input[type=radio]{width:20px;height:20px;min-height:20px;padding:0;flex:0 0 20px}
 @media(max-width:900px){.product-row{gap:12px}.row-switches{gap:6px}.quick-switch{min-width:94px;padding:7px}.product-info h2{font-size:18px}}
 @media(max-width:650px){.admin-tools{display:grid;grid-template-columns:1fr;gap:8px}.general-settings{padding:12px}.general-settings .check{font-size:14px}.row-switches{flex:1;margin-left:0}.quick-switch{min-width:0;flex:1}.product-row>.secondary{margin-left:0}.product-info{flex-basis:calc(100% - 76px)}.notice{bottom:12px;padding:10px 12px;gap:8px;flex-wrap:wrap}.notice p{flex:1;min-width:150px}.featured-toolbar{gap:8px;flex-wrap:wrap}.featured-toolbar label{min-width:150px}.featured-toolbar strong{font-size:12px}#featured-slots{grid-template-columns:repeat(2,minmax(0,1fr))}.category-add{flex-direction:column;align-items:stretch}.category-row{grid-template-columns:1fr auto}.category-controls{grid-column:1/-1}.category-row label{min-width:0}#featured-form{max-height:calc(100dvh - 150px)}}
+
+/* --- Ajustar foto ------------------------------------------------------
+   El recuadro de la vista previa es cuadrado igual que el de la web, así lo
+   que el administrador ve acá es lo que va a salir publicado. */
+.photo-frame{position:relative;overflow:hidden}
+#adjust-dialog{max-width:440px}
+.adjust-stage{position:relative;aspect-ratio:1/1;margin:14px 0 10px;border:1px solid #dedfd6;border-radius:14px;background:#fff;overflow:hidden;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none}
+.adjust-stage.is-dragging{cursor:grabbing}
+.adjust-stage img{position:absolute;max-width:none;max-height:none;object-fit:contain;pointer-events:none;-webkit-user-drag:none}
+.adjust-stage::after{content:"";position:absolute;inset:8%;border:1px dashed rgba(43,45,66,.22);border-radius:8px;pointer-events:none}
+.adjust-zoom{display:flex;flex-direction:row;align-items:center;gap:10px;font-size:14px;color:#5b5d65}
+.adjust-zoom span{flex:none;white-space:nowrap}
+.adjust-zoom input{flex:1;min-width:0;height:34px;accent-color:#345640}
+.adjust-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px}
+.adjust-spacer{flex:1}
+#adjust-message{margin-top:8px;min-height:20px;font-size:14px}
+@media(max-width:650px){
+  #adjust-dialog{max-width:none}
+  .adjust-actions{gap:8px}
+  .adjust-actions .action,.adjust-actions .secondary{flex:1;min-height:44px}
+  .adjust-spacer{flex-basis:100%;height:0}
+}
