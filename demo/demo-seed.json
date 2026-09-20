@@ -1,0 +1,1292 @@
+{
+ "products": [
+  {
+   "producto": "Queso azul danés cremoso",
+   "categoria": "Quesos",
+   "marca": "Emborg",
+   "origen": "Dinamarca",
+   "presentacion": "100 g",
+   "notas": "Danablu Creamy",
+   "resumen": "Danablu Creamy: extra cremoso y suave. Emborg · Dinamarca.",
+   "precio": 55000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": true,
+   "orden": 0,
+   "imagen_id": "fe061612-bcb3-4533-92b9-20fe35c5c8db",
+   "id": "a1bb111e-59ff-4b2f-9f22-21f9ece423c5",
+   "version": 5,
+   "created_at": "2026-09-17T15:39:29.840Z",
+   "updated_at": "2026-09-20T04:04:07.724Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Queso crema",
+   "categoria": "Quesos",
+   "marca": "Emborg",
+   "origen": "Dinamarca",
+   "presentacion": "200 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 75000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 2,
+   "imagen_id": "7abd2818-38b7-4789-9666-a28611f487f9",
+   "id": "0d9ccc30-910c-441a-9091-5e1cbe28494c",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.842Z",
+   "updated_at": "2026-09-20T04:04:07.725Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Brie",
+   "categoria": "Quesos",
+   "marca": "Emborg",
+   "origen": "Dinamarca",
+   "presentacion": "125 g",
+   "notas": "",
+   "resumen": "Cremoso, de corteza blanca y corazón suave. Emborg · Dinamarca.",
+   "precio": 95000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": true,
+   "orden": 3,
+   "imagen_id": "1594951e-1ac4-4992-99f5-f75f78128184",
+   "id": "17ebdc28-ba0a-445e-8b46-c10c78d9250f",
+   "version": 5,
+   "created_at": "2026-09-17T15:39:29.842Z",
+   "updated_at": "2026-09-20T03:06:02.553Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Queso azul danés",
+   "categoria": "Quesos",
+   "marca": "Emborg",
+   "origen": "Dinamarca",
+   "presentacion": "100 g",
+   "notas": "Danablu con denominación de origen",
+   "resumen": "",
+   "precio": 60000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 1,
+   "imagen_id": "73de0f16-75a6-46b9-9fa5-4b9f6f6e70fe",
+   "id": "71adb305-9b2b-4bbc-b713-1b127814c31c",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.842Z",
+   "updated_at": "2026-09-20T03:06:02.552Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Camembert",
+   "categoria": "Quesos",
+   "marca": "Emborg",
+   "origen": "Dinamarca",
+   "presentacion": "125 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 80000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 4,
+   "imagen_id": "faff6f18-ba90-4608-aa5e-ea10346a06c9",
+   "id": "e80f489f-8abc-4c33-8379-1f407d49d7a9",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.842Z",
+   "updated_at": "2026-09-20T03:06:02.554Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Cheddar madurado 10 meses",
+   "categoria": "Quesos",
+   "marca": "Emborg",
+   "origen": "Dinamarca",
+   "presentacion": "200 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 45000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 7,
+   "imagen_id": "9c5f59bd-3307-423c-969d-c6863b4123c1",
+   "id": "04980abb-7e2e-4ec7-b31e-62d1edebad79",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.843Z",
+   "updated_at": "2026-09-20T04:04:07.726Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Cheddar",
+   "categoria": "Quesos",
+   "marca": "Emborg",
+   "origen": "Dinamarca",
+   "presentacion": "150 g",
+   "notas": "",
+   "resumen": "Suave y fundente, el aliado de la cocina. Emborg.",
+   "precio": 120000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": true,
+   "orden": 6,
+   "imagen_id": "dc1b958a-587b-4b00-96b0-79adbba79669",
+   "id": "5e6cd0f6-f2f0-4747-afea-21fef792ddd0",
+   "version": 5,
+   "created_at": "2026-09-17T15:39:29.843Z",
+   "updated_at": "2026-09-20T03:06:02.554Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Gouda",
+   "categoria": "Quesos",
+   "marca": "Emborg",
+   "origen": "Dinamarca",
+   "presentacion": "150 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 85000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 5,
+   "imagen_id": "3426caf6-20a3-4426-81ed-bd04d5b9622c",
+   "id": "7107ea39-ff46-4910-9d10-4bc7924af70a",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.843Z",
+   "updated_at": "2026-09-20T04:04:07.725Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Grana Padano",
+   "categoria": "Quesos",
+   "marca": "Zanetti",
+   "origen": "Italia",
+   "presentacion": "Pieza 1 kg aprox.",
+   "notas": "",
+   "resumen": "DOP, para rallar o en lascas. Zanetti · Italia.",
+   "precio": 165000,
+   "por_kg": true,
+   "visible": true,
+   "stock": true,
+   "destacado": true,
+   "orden": 11,
+   "imagen_id": "31433927-45e0-4f23-bb6c-34f13f5505bd",
+   "id": "a7153e5a-e9ff-440c-9e69-e66b82c5d8c8",
+   "version": 5,
+   "created_at": "2026-09-17T15:39:29.843Z",
+   "updated_at": "2026-09-20T04:04:07.726Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Queso griego en aceite de oliva con aceitunas y hierbas",
+   "categoria": "Quesos",
+   "marca": "Emborg",
+   "origen": "Dinamarca",
+   "presentacion": "300 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 15000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 9,
+   "imagen_id": "2a6556cc-59a5-4d8d-8a8b-4d86d4f6114b",
+   "id": "aa3f47fd-0a50-46c3-8391-3a65648e1fd2",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.843Z",
+   "updated_at": "2026-09-20T03:06:02.555Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Parmigiano Reggiano",
+   "categoria": "Quesos",
+   "marca": "Zanetti",
+   "origen": "Italia",
+   "presentacion": "Pieza 1 kg aprox.",
+   "notas": "",
+   "resumen": "",
+   "precio": 465000,
+   "por_kg": true,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 10,
+   "imagen_id": "97e79974-dc97-405d-9638-f2a2d5abccde",
+   "id": "e57d4794-d3be-4493-9769-0c611a707836",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.843Z",
+   "updated_at": "2026-09-20T04:04:07.726Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Queso griego (feta)",
+   "categoria": "Quesos",
+   "marca": "Emborg",
+   "origen": "Dinamarca",
+   "presentacion": "200 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 55000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 8,
+   "imagen_id": "fbeb6217-dc3b-4f0b-9a6d-58bcff3efbed",
+   "id": "f22904dd-534a-48ff-9103-7068f6b083ef",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.843Z",
+   "updated_at": "2026-09-20T03:06:02.555Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Parmigiano Reggiano",
+   "categoria": "Quesos",
+   "marca": "Zanetti",
+   "origen": "Italia",
+   "presentacion": "150 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 20000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 12,
+   "imagen_id": "af0558ca-d39f-4dec-b4d2-d57169f36536",
+   "id": "1686d2a9-fa3d-4898-aa6d-65e82b5cb3aa",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.844Z",
+   "updated_at": "2026-09-20T04:04:07.727Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Manchego DO Maese Miguel",
+   "categoria": "Quesos",
+   "marca": "Quesos Rocinante",
+   "origen": "España",
+   "presentacion": "430 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 40000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 16,
+   "imagen_id": "a7dca26f-98a4-42db-b619-cacbe7bbeef9",
+   "id": "3653e2ed-26b9-4813-b55a-ca2e961a3f5e",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.844Z",
+   "updated_at": "2026-09-20T04:04:07.729Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Provolone blanco",
+   "categoria": "Quesos",
+   "marca": "Zanetti",
+   "origen": "Italia",
+   "presentacion": "Pieza 1.5 kg aprox.",
+   "notas": "",
+   "resumen": "",
+   "precio": 585000,
+   "por_kg": true,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 14,
+   "imagen_id": "f6af2f8f-75ec-4edd-87e8-7749fdb5795a",
+   "id": "4aa9a6bd-6dea-4362-9e22-e3d9e4d92013",
+   "version": 5,
+   "created_at": "2026-09-17T15:39:29.844Z",
+   "updated_at": "2026-09-20T04:04:07.728Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Grana Padano",
+   "categoria": "Quesos",
+   "marca": "Zanetti",
+   "origen": "Italia",
+   "presentacion": "150 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 80000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 13,
+   "imagen_id": "b2c56fd4-27e1-4c75-a4ea-5e1786db5db4",
+   "id": "8f2ce442-9ee3-498e-b08d-08d6143bb190",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.844Z",
+   "updated_at": "2026-09-20T04:04:07.727Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Manchego DO Maese Miguel",
+   "categoria": "Quesos",
+   "marca": "Quesos Rocinante",
+   "origen": "España",
+   "presentacion": "150 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 45000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 17,
+   "imagen_id": "5f0da67d-68da-4758-a98d-73d325785abe",
+   "id": "90578e06-28f9-4a9e-a03f-998b0dd29482",
+   "version": 5,
+   "created_at": "2026-09-17T15:39:29.844Z",
+   "updated_at": "2026-09-20T04:04:07.730Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Tapas de quesos españoles",
+   "categoria": "Quesos",
+   "marca": "Quesos Rocinante",
+   "origen": "España",
+   "presentacion": "100 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 65000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 20,
+   "imagen_id": "713c13ae-282e-4184-887c-f3d390c7c03b",
+   "id": "9c45ffde-243f-465a-bbb8-6f85fc9c6322",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.844Z",
+   "updated_at": "2026-09-20T03:06:02.556Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Queso rallado Granello",
+   "categoria": "Quesos",
+   "marca": "Zanetti",
+   "origen": "Italia",
+   "presentacion": "160 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 85000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 15,
+   "imagen_id": "06414f56-997f-4c7a-93dd-198c535f4ce0",
+   "id": "aa9709f1-5088-4c4e-bddc-c8f66153e058",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.844Z",
+   "updated_at": "2026-09-20T04:04:07.729Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Queso de cabra semicurado",
+   "categoria": "Quesos",
+   "marca": "",
+   "origen": "España",
+   "presentacion": "150 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 105000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 18,
+   "imagen_id": "e014a049-0deb-4a33-892d-89a865ac8eab",
+   "id": "aabb8195-169a-4ef8-b403-39cd422eedd0",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.844Z",
+   "updated_at": "2026-09-20T04:04:07.730Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Queso de cabra al vino tinto",
+   "categoria": "Quesos",
+   "marca": "",
+   "origen": "España",
+   "presentacion": "150 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 15000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 19,
+   "imagen_id": "da00e58e-d622-4830-98ec-818a8807385c",
+   "id": "d7141b8c-b7df-4b63-b5c0-19f0f17ce506",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.844Z",
+   "updated_at": "2026-09-20T03:06:02.556Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Mortadela con pistacho Optima",
+   "categoria": "Jamones y fiambres",
+   "marca": "Leoncini",
+   "origen": "Italia",
+   "presentacion": "Pieza 3 kg aprox.",
+   "notas": "",
+   "resumen": "",
+   "precio": 165000,
+   "por_kg": true,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 22,
+   "imagen_id": "e5435470-7bf0-42e9-a186-a9ec43ab5c64",
+   "id": "53e78b02-161d-4c1c-8b79-9be5df99d0b4",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.845Z",
+   "updated_at": "2026-09-20T04:04:07.730Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Tapas de jamón serrano",
+   "categoria": "Jamones y fiambres",
+   "marca": "Jamones Arroyo",
+   "origen": "España",
+   "presentacion": "80 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 25000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 24,
+   "imagen_id": "bac50ba4-291e-4d69-96de-6cf7fe7d6c1b",
+   "id": "5532f38d-a309-4e88-8925-6e294cd6e3fe",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.845Z",
+   "updated_at": "2026-09-20T03:06:02.557Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Jamón serrano Bodega sin hueso",
+   "categoria": "Jamones y fiambres",
+   "marca": "Jamones Arroyo",
+   "origen": "España",
+   "presentacion": "Bloque 4 kg aprox.",
+   "notas": "",
+   "resumen": "",
+   "precio": 590000,
+   "por_kg": true,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 26,
+   "imagen_id": "009e1e06-ce26-4725-a23a-cc8e92f455c9",
+   "id": "5ece4341-f262-46d3-bfdc-b853440155e9",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.845Z",
+   "updated_at": "2026-09-20T04:04:07.732Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Jamón cocido Castagna",
+   "categoria": "Jamones y fiambres",
+   "marca": "Leoncini",
+   "origen": "Italia",
+   "presentacion": "Bloque 7.5 kg aprox.",
+   "notas": "Prosciutto cotto",
+   "resumen": "Prosciutto cotto Castagna, el clásico italiano. Leoncini · Italia.",
+   "precio": 280000,
+   "por_kg": true,
+   "visible": true,
+   "stock": true,
+   "destacado": true,
+   "orden": 21,
+   "imagen_id": "a4b76d41-ed09-4a4f-bd8d-822b6904a462",
+   "id": "6883d446-8067-4f95-a3ee-10ac38417171",
+   "version": 5,
+   "created_at": "2026-09-17T15:39:29.845Z",
+   "updated_at": "2026-09-20T03:06:02.557Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Jamón serrano loncheado Gourmet",
+   "categoria": "Jamones y fiambres",
+   "marca": "Jamones Arroyo",
+   "origen": "España",
+   "presentacion": "50 g",
+   "notas": "",
+   "resumen": "Loncheado, curado con paciencia. Arroyo Gourmet · España.",
+   "precio": 85000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": true,
+   "orden": 25,
+   "imagen_id": "2fce9d2c-eb9b-4041-a5c5-be7d21907b9a",
+   "id": "71834cd1-3016-4222-8ab0-96fb70fa52b6",
+   "version": 5,
+   "created_at": "2026-09-17T15:39:29.845Z",
+   "updated_at": "2026-09-20T04:04:07.731Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Mortadela Ovalina",
+   "categoria": "Jamones y fiambres",
+   "marca": "Leoncini",
+   "origen": "Italia",
+   "presentacion": "700 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 50000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 23,
+   "imagen_id": "04d7e22e-fb18-449e-958c-879daa2344e3",
+   "id": "9de3f780-3ba0-4d4e-bce2-f77d5084b516",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.845Z",
+   "updated_at": "2026-09-20T03:06:02.557Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Pata de jamón serrano con hueso",
+   "categoria": "Jamones y fiambres",
+   "marca": "",
+   "origen": "España",
+   "presentacion": "Pieza 7.5 kg aprox.",
+   "notas": "",
+   "resumen": "",
+   "precio": 475000,
+   "por_kg": true,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 27,
+   "imagen_id": "80a644ac-5162-4562-b96b-750632a01a66",
+   "id": "1fa4d880-f3b8-4573-b616-5e78ca54f742",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.846Z",
+   "updated_at": "2026-09-20T04:04:07.733Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Fuet bites",
+   "categoria": "Embutidos y salames",
+   "marca": "El Conchel",
+   "origen": "España",
+   "presentacion": "55 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 60000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 31,
+   "imagen_id": "e9cf4d2b-f474-417d-a618-e0eafefc3f35",
+   "id": "3dfa99d7-140d-4239-838b-ae4fdef3b5eb",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.846Z",
+   "updated_at": "2026-09-20T04:04:07.733Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Chorizo extra loncheado Artesano",
+   "categoria": "Embutidos y salames",
+   "marca": "Jamones Arroyo",
+   "origen": "España",
+   "presentacion": "70 g",
+   "notas": "",
+   "resumen": "Chorizo extra loncheado. Arroyo Artesano · España.",
+   "precio": 25000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": true,
+   "orden": 29,
+   "imagen_id": "ed9ecf48-8940-4d5f-b5d4-782e00f5e592",
+   "id": "460d4d7d-44b2-4160-81fc-71121bd53d0c",
+   "version": 5,
+   "created_at": "2026-09-17T15:39:29.846Z",
+   "updated_at": "2026-09-20T04:04:07.731Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Salchichón loncheado Artesano",
+   "categoria": "Embutidos y salames",
+   "marca": "Jamones Arroyo",
+   "origen": "España",
+   "presentacion": "70 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 45000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 30,
+   "imagen_id": "44fb2d05-a36c-403e-93a9-929ccfb8e832",
+   "id": "51c2f639-8aa7-413b-bd3b-590279a4da87",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.846Z",
+   "updated_at": "2026-09-20T04:04:07.732Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Mini jamón serrano con soporte y cuchillo",
+   "categoria": "Jamones y fiambres",
+   "marca": "Andrés Izquierdo",
+   "origen": "España",
+   "presentacion": "800 g aprox.",
+   "notas": "",
+   "resumen": "",
+   "precio": 95000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 28,
+   "imagen_id": "4413c75f-c90b-49a6-b2d6-c3f973d413ec",
+   "id": "b7256f64-7d3d-46bc-a7fe-668a23fc9155",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.846Z",
+   "updated_at": "2026-09-20T04:04:07.733Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Little fuet",
+   "categoria": "Embutidos y salames",
+   "marca": "El Conchel",
+   "origen": "España",
+   "presentacion": "55 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 85000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 33,
+   "imagen_id": "ab88ff6a-953c-4056-a043-1dc72cc2c88e",
+   "id": "787cf122-b03c-41c0-b8c9-55fa9b363d17",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.847Z",
+   "updated_at": "2026-09-20T04:04:07.732Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Old Amsterdam",
+   "categoria": "Quesos",
+   "marca": "Westland",
+   "origen": "Países Bajos",
+   "presentacion": "Pieza",
+   "notas": "Gouda madurado",
+   "resumen": "Gouda madurado de carácter intenso. Westland · Países Bajos.",
+   "precio": null,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": true,
+   "orden": 34,
+   "imagen_id": "ca95099f-41e3-4b76-a8c2-4e7bd9fe3c54",
+   "id": "d1038ca6-f1a1-45dd-8fcd-b71e01c1436a",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.847Z",
+   "updated_at": "2026-09-20T03:47:17.779Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Tabla soporte para jamón",
+   "categoria": "Accesorios",
+   "marca": "",
+   "origen": "",
+   "presentacion": "Unidad",
+   "notas": "",
+   "resumen": "",
+   "precio": 65000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 35,
+   "imagen_id": "d452dfdc-89c7-42be-8a91-4bfa48dd0e12",
+   "id": "d71371e9-24e2-4592-b444-597c6f2b6fb6",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.847Z",
+   "updated_at": "2026-09-20T18:09:54.699Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Little chorizo",
+   "categoria": "Embutidos y salames",
+   "marca": "El Conchel",
+   "origen": "España",
+   "presentacion": "55 g",
+   "notas": "",
+   "resumen": "",
+   "precio": 35000,
+   "por_kg": false,
+   "visible": true,
+   "stock": true,
+   "destacado": false,
+   "orden": 32,
+   "imagen_id": "7a537374-c845-4624-8e07-71a3b16e3a4e",
+   "id": "fd169614-97d9-4830-9140-ba926e60463f",
+   "version": 4,
+   "created_at": "2026-09-17T15:39:29.847Z",
+   "updated_at": "2026-09-20T04:04:07.732Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Basiron Pesto Verde",
+   "categoria": "Quesos",
+   "marca": "Basiron",
+   "origen": "Países Bajos",
+   "presentacion": "",
+   "notas": "",
+   "resumen": "",
+   "precio": null,
+   "por_kg": false,
+   "visible": true,
+   "stock": null,
+   "destacado": false,
+   "orden": 100,
+   "imagen_id": "2324fbb0-0759-4da7-9e7e-aac396b5db53",
+   "id": "2f726ed3-6c84-4886-9b14-f248dd84e758",
+   "version": 1,
+   "created_at": "2026-09-20T03:08:53.509Z",
+   "updated_at": "2026-09-20T03:08:53.509Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Basiron Olive Tomato",
+   "categoria": "Quesos",
+   "marca": "Basiron",
+   "origen": "Países Bajos",
+   "presentacion": "",
+   "notas": "",
+   "resumen": "",
+   "precio": null,
+   "por_kg": false,
+   "visible": true,
+   "stock": null,
+   "destacado": false,
+   "orden": 101,
+   "imagen_id": "07048f34-bd54-45d4-b559-1e1de90b806f",
+   "id": "8436ef97-c9f4-464f-9577-3daefb4a7af9",
+   "version": 1,
+   "created_at": "2026-09-20T03:08:53.510Z",
+   "updated_at": "2026-09-20T03:08:53.510Z",
+   "archived_at": null
+  },
+  {
+   "producto": "Montana Intenso",
+   "categoria": "Quesos",
+   "marca": "Montana",
+   "origen": "Países Bajos",
+   "presentacion": "",
+   "notas": "",
+   "resumen": "",
+   "precio": null,
+   "por_kg": false,
+   "visible": true,
+   "stock": null,
+   "destacado": false,
+   "orden": 102,
+   "imagen_id": "3eee1ef2-d7fa-4819-8df4-6ff46d0893e7",
+   "id": "d29b5fee-2878-4229-b3f1-53e1eaf157b5",
+   "version": 1,
+   "created_at": "2026-09-20T03:08:53.510Z",
+   "updated_at": "2026-09-20T03:08:53.510Z",
+   "archived_at": null
+  }
+ ],
+ "settings": {
+  "mostrar_precios": false,
+  "mostrar_destacados": true,
+  "featured": [
+   "17ebdc28-ba0a-445e-8b46-c10c78d9250f",
+   "a1bb111e-59ff-4b2f-9f22-21f9ece423c5",
+   "5e6cd0f6-f2f0-4747-afea-21fef792ddd0",
+   "a7153e5a-e9ff-440c-9e69-e66b82c5d8c8",
+   "71834cd1-3016-4222-8ab0-96fb70fa52b6",
+   "460d4d7d-44b2-4160-81fc-71121bd53d0c",
+   "6883d446-8067-4f95-a3ee-10ac38417171",
+   "d1038ca6-f1a1-45dd-8fcd-b71e01c1436a"
+  ],
+  "categories": [
+   "Quesos",
+   "Jamones y fiambres",
+   "Embutidos y salames",
+   "Accesorios"
+  ],
+  "revision": 115,
+  "updatedAt": "2026-09-20T18:09:54.700Z",
+  "mediaHistory": {}
+ },
+ "updates": {
+  "version": "accesorios-encuadre-2026-09-20",
+  "photos": [
+   {
+    "id": "71adb305-9b2b-4bbc-b713-1b127814c31c",
+    "previousMedia": "146ae8d1-534f-40c1-9659-94c5d5d86211"
+   },
+   {
+    "id": "17ebdc28-ba0a-445e-8b46-c10c78d9250f",
+    "previousMedia": "f17ed998-0199-4cc3-a2d5-ea6b2d5198ee"
+   },
+   {
+    "id": "e80f489f-8abc-4c33-8379-1f407d49d7a9",
+    "previousMedia": "fe38608a-2b63-4fde-ba52-beb5cc7a4dbc"
+   },
+   {
+    "id": "5e6cd0f6-f2f0-4747-afea-21fef792ddd0",
+    "previousMedia": "bdd24210-2522-4325-9176-748b9969427a"
+   },
+   {
+    "id": "f22904dd-534a-48ff-9103-7068f6b083ef",
+    "previousMedia": "5aebd36b-7bbd-4a04-8168-143cf6526786"
+   },
+   {
+    "id": "aa3f47fd-0a50-46c3-8391-3a65648e1fd2",
+    "previousMedia": "97de3c8e-faa2-4ff9-a301-94207f0e78ce"
+   },
+   {
+    "id": "4aa9a6bd-6dea-4362-9e22-e3d9e4d92013",
+    "previousMedia": "43e26503-4cb7-43e6-8d54-9b693f4b5bcb"
+   },
+   {
+    "id": "90578e06-28f9-4a9e-a03f-998b0dd29482",
+    "previousMedia": "f7001910-6fc4-4760-923d-db0ec4f50740"
+   },
+   {
+    "id": "d7141b8c-b7df-4b63-b5c0-19f0f17ce506",
+    "previousMedia": "5a925043-94d7-4242-9c20-f836323e1b5d"
+   },
+   {
+    "id": "9c45ffde-243f-465a-bbb8-6f85fc9c6322",
+    "previousMedia": "8aea38ae-031c-437f-b45b-2695b3d95301"
+   },
+   {
+    "id": "6883d446-8067-4f95-a3ee-10ac38417171",
+    "previousMedia": "196782c8-bf58-4c9b-b1bc-e2f3db3cc055"
+   },
+   {
+    "id": "9de3f780-3ba0-4d4e-bce2-f77d5084b516",
+    "previousMedia": "6b7c6d2d-a7ca-4ed5-af08-48b3d5f5a4fc"
+   },
+   {
+    "id": "5532f38d-a309-4e88-8925-6e294cd6e3fe",
+    "previousMedia": "ae638c2e-1b32-4956-8880-b67fe98cbcb7"
+   },
+   {
+    "id": "a1bb111e-59ff-4b2f-9f22-21f9ece423c5",
+    "previousMedia": "65b1bd25-aa88-450f-96e1-d3719ea8df7e"
+   },
+   {
+    "id": "0d9ccc30-910c-441a-9091-5e1cbe28494c",
+    "previousMedia": "5d588088-8407-450a-98f4-fc41f9f6e418"
+   },
+   {
+    "id": "7107ea39-ff46-4910-9d10-4bc7924af70a",
+    "previousMedia": "c5404af3-fe27-4be8-a482-b2afcbc194a1"
+   },
+   {
+    "id": "04980abb-7e2e-4ec7-b31e-62d1edebad79",
+    "previousMedia": "d496dd53-c952-44ff-affd-b271e53134d8"
+   },
+   {
+    "id": "a7153e5a-e9ff-440c-9e69-e66b82c5d8c8",
+    "previousMedia": "2144b293-d5ab-4e7a-af5d-0e557242fa24"
+   },
+   {
+    "id": "e57d4794-d3be-4493-9769-0c611a707836",
+    "previousMedia": "cab76a6a-6717-4b90-99e4-f8052362cee8"
+   },
+   {
+    "id": "1686d2a9-fa3d-4898-aa6d-65e82b5cb3aa",
+    "previousMedia": "0dd36a5c-4784-44e9-acfe-188a6d6a04c5"
+   },
+   {
+    "id": "8f2ce442-9ee3-498e-b08d-08d6143bb190",
+    "previousMedia": "dfadf72d-7b39-4f47-8432-ece2dc21b641"
+   },
+   {
+    "id": "4aa9a6bd-6dea-4362-9e22-e3d9e4d92013",
+    "previousMedia": "58239e52-590d-435e-bfd8-cd7b8e7c4a8a"
+   },
+   {
+    "id": "aa9709f1-5088-4c4e-bddc-c8f66153e058",
+    "previousMedia": "f52d8797-c35f-4236-b2b3-63b447b9b477"
+   },
+   {
+    "id": "3653e2ed-26b9-4813-b55a-ca2e961a3f5e",
+    "previousMedia": "6ba8d4d4-bac9-414e-8f9e-05027ed77405"
+   },
+   {
+    "id": "90578e06-28f9-4a9e-a03f-998b0dd29482",
+    "previousMedia": "f70d3a9c-ef82-4a1a-a389-de8508b65675"
+   },
+   {
+    "id": "aabb8195-169a-4ef8-b403-39cd422eedd0",
+    "previousMedia": "6610640b-9781-4b48-8b81-79bc84b6b057"
+   },
+   {
+    "id": "53e78b02-161d-4c1c-8b79-9be5df99d0b4",
+    "previousMedia": "854f7e4e-baee-4049-b060-846f613b7294"
+   },
+   {
+    "id": "460d4d7d-44b2-4160-81fc-71121bd53d0c",
+    "previousMedia": "6984f0dd-f5a5-4579-bc93-c62291c43086"
+   },
+   {
+    "id": "71834cd1-3016-4222-8ab0-96fb70fa52b6",
+    "previousMedia": "7bd65910-2b8c-40f8-9503-0bfbf6a33a11"
+   },
+   {
+    "id": "51c2f639-8aa7-413b-bd3b-590279a4da87",
+    "previousMedia": "18ce478a-de93-49b8-acbd-b4e45df553e2"
+   },
+   {
+    "id": "5ece4341-f262-46d3-bfdc-b853440155e9",
+    "previousMedia": "b06fe31d-8eb5-402c-bf8e-c39db361ce04"
+   },
+   {
+    "id": "787cf122-b03c-41c0-b8c9-55fa9b363d17",
+    "previousMedia": "bfb359d8-8bb2-4a19-a288-52f62ce1a53b"
+   },
+   {
+    "id": "fd169614-97d9-4830-9140-ba926e60463f",
+    "previousMedia": "143ec297-846e-4473-851f-156303f7c993"
+   },
+   {
+    "id": "3dfa99d7-140d-4239-838b-ae4fdef3b5eb",
+    "previousMedia": "448d15f3-b268-4ff9-8c3c-777755909894"
+   },
+   {
+    "id": "1fa4d880-f3b8-4573-b616-5e78ca54f742",
+    "previousMedia": "9a699a45-3261-4cba-882b-22a0ba82c090"
+   },
+   {
+    "id": "b7256f64-7d3d-46bc-a7fe-668a23fc9155",
+    "previousMedia": "1bf3765e-64c0-4341-863d-010d82d800f8"
+   },
+   {
+    "id": "d71371e9-24e2-4592-b444-597c6f2b6fb6",
+    "previousMedia": null
+   }
+  ],
+  "addedProductIds": [
+   "2f726ed3-6c84-4886-9b14-f248dd84e758",
+   "8436ef97-c9f4-464f-9577-3daefb4a7af9",
+   "d29b5fee-2878-4229-b3f1-53e1eaf157b5"
+  ],
+  "categories": [
+   {
+    "id": "d1038ca6-f1a1-45dd-8fcd-b71e01c1436a",
+    "previous": "Especialidades",
+    "next": "Quesos"
+   }
+  ],
+  "renameCategories": [
+   {
+    "previous": "Especialidades",
+    "next": "Accesorios"
+   }
+  ]
+ },
+ "frames": {
+  "fe061612-bcb3-4533-92b9-20fe35c5c8db": {
+   "x": 0.236,
+   "y": 0.09943181818181818,
+   "w": 0.526,
+   "h": 0.8068181818181818,
+   "r": 1.4204545454545454
+  },
+  "7abd2818-38b7-4789-9666-a28611f487f9": {
+   "x": 0.088,
+   "y": 0.07670454545454546,
+   "w": 0.798,
+   "h": 0.8295454545454546,
+   "r": 1.4204545454545454
+  },
+  "1594951e-1ac4-4992-99f5-f75f78128184": {
+   "x": 0.064,
+   "y": 0.12709832134292565,
+   "w": 0.894,
+   "h": 0.8321342925659473,
+   "r": 1.2004801920768307
+  },
+  "73de0f16-75a6-46b9-9fa5-4b9f6f6e70fe": {
+   "x": 0.082,
+   "y": 0.016786570743405275,
+   "w": 0.802,
+   "h": 0.947242206235012,
+   "r": 1.2004801920768307
+  },
+  "faff6f18-ba90-4608-aa5e-ea10346a06c9": {
+   "x": 0.052,
+   "y": 0.13189448441247004,
+   "w": 0.902,
+   "h": 0.8393285371702638,
+   "r": 1.2004801920768307
+  },
+  "9c5f59bd-3307-423c-969d-c6863b4123c1": {
+   "x": 0.076,
+   "y": 0.022,
+   "w": 0.836,
+   "h": 0.952,
+   "r": 1
+  },
+  "dc1b958a-587b-4b00-96b0-79adbba79669": {
+   "x": 0.21,
+   "y": 0.076,
+   "w": 0.708,
+   "h": 0.892,
+   "r": 1
+  },
+  "3426caf6-20a3-4426-81ed-bd04d5b9622c": {
+   "x": 0.1888412017167382,
+   "y": 0.03,
+   "w": 0.6244635193133047,
+   "h": 0.886,
+   "r": 0.932
+  },
+  "31433927-45e0-4f23-bb6c-34f13f5505bd": {
+   "x": 0.05389221556886228,
+   "y": 0.004,
+   "w": 0.8892215568862275,
+   "h": 0.966,
+   "r": 0.667
+  },
+  "2a6556cc-59a5-4d8d-8a8b-4d86d4f6114b": {
+   "x": 0.172,
+   "y": 0.222,
+   "w": 0.76,
+   "h": 0.738,
+   "r": 1
+  },
+  "97e79974-dc97-405d-9638-f2a2d5abccde": {
+   "x": 0.025974025974025976,
+   "y": 0.114,
+   "w": 0.9437229437229437,
+   "h": 0.712,
+   "r": 0.461
+  },
+  "fbeb6217-dc3b-4f0b-9a6d-58bcff3efbed": {
+   "x": 0.192,
+   "y": 0.15819209039548024,
+   "w": 0.686,
+   "h": 0.7994350282485876,
+   "r": 1.4124293785310735
+  },
+  "af0558ca-d39f-4dec-b4d2-d57169f36536": {
+   "x": 0.2524271844660194,
+   "y": 0.104,
+   "w": 0.5048543689320388,
+   "h": 0.786,
+   "r": 0.618
+  },
+  "a7dca26f-98a4-42db-b619-cacbe7bbeef9": {
+   "x": 0.156,
+   "y": 0.11313131313131314,
+   "w": 0.674,
+   "h": 0.7656565656565657,
+   "r": 1.0111223458038423
+  },
+  "f6af2f8f-75ec-4edd-87e8-7749fdb5795a": {
+   "x": 0.03,
+   "y": 0.158,
+   "w": 0.916,
+   "h": 0.672,
+   "r": 1
+  },
+  "b2c56fd4-27e1-4c75-a4ea-5e1786db5db4": {
+   "x": 0.06542056074766354,
+   "y": 0.04,
+   "w": 0.9252336448598131,
+   "h": 0.924,
+   "r": 0.428
+  },
+  "5f0da67d-68da-4758-a98d-73d325785abe": {
+   "x": 0.096,
+   "y": 0.07045454545454545,
+   "w": 0.79,
+   "h": 0.8636363636363636,
+   "r": 1.1363636363636365
+  },
+  "713c13ae-282e-4184-887c-f3d390c7c03b": {
+   "x": 0.192,
+   "y": 0.194,
+   "w": 0.614,
+   "h": 0.608,
+   "r": 1
+  },
+  "06414f56-997f-4c7a-93dd-198c535f4ce0": {
+   "x": 0.224,
+   "y": 0.042,
+   "w": 0.548,
+   "h": 0.906,
+   "r": 1
+  },
+  "e014a049-0deb-4a33-892d-89a865ac8eab": {
+   "x": 0.052,
+   "y": 0.10662824207492795,
+   "w": 0.93,
+   "h": 0.8270893371757925,
+   "r": 1.443001443001443
+  },
+  "da00e58e-d622-4830-98ec-818a8807385c": {
+   "x": 0.072,
+   "y": 0.24,
+   "w": 0.898,
+   "h": 0.488,
+   "r": 1
+  },
+  "e5435470-7bf0-42e9-a186-a9ec43ab5c64": {
+   "x": 0.144,
+   "y": 0.09523809523809523,
+   "w": 0.706,
+   "h": 0.8035714285714286,
+   "r": 1.4880952380952381
+  },
+  "bac50ba4-291e-4d69-96de-6cf7fe7d6c1b": {
+   "x": 0.054,
+   "y": 0.134,
+   "w": 0.904,
+   "h": 0.73,
+   "r": 1
+  },
+  "009e1e06-ce26-4725-a23a-cc8e92f455c9": {
+   "x": 0,
+   "y": 0.02702702702702703,
+   "w": 1,
+   "h": 0.972972972972973,
+   "r": 1.1273957158962795
+  },
+  "a4b76d41-ed09-4a4f-bd8d-822b6904a462": {
+   "x": 0.166,
+   "y": 0.09226190476190477,
+   "w": 0.634,
+   "h": 0.8154761904761905,
+   "r": 1.4903129657228018
+  },
+  "2fce9d2c-eb9b-4041-a5c5-be7d21907b9a": {
+   "x": 0.025477707006369428,
+   "y": 0.008,
+   "w": 0.9490445859872612,
+   "h": 0.982,
+   "r": 0.627
+  },
+  "04d7e22e-fb18-449e-958c-879daa2344e3": {
+   "x": 0.058,
+   "y": 0.23809523809523808,
+   "w": 0.888,
+   "h": 0.6428571428571429,
+   "r": 1.4903129657228018
+  },
+  "80a644ac-5162-4562-b96b-750632a01a66": {
+   "x": 0.026,
+   "y": 0,
+   "w": 0.936,
+   "h": 0.9615384615384616,
+   "r": 1.7513134851138354
+  },
+  "e9cf4d2b-f474-417d-a618-e0eafefc3f35": {
+   "x": 0.244,
+   "y": 0.044,
+   "w": 0.504,
+   "h": 0.84,
+   "r": 1
+  },
+  "ed9ecf48-8940-4d5f-b5d4-782e00f5e592": {
+   "x": 0.02258064516129032,
+   "y": 0.01,
+   "w": 0.9483870967741935,
+   "h": 0.958,
+   "r": 0.62
+  },
+  "44fb2d05-a36c-403e-93a9-929ccfb8e832": {
+   "x": 0.009966777408637873,
+   "y": 0.004,
+   "w": 0.9767441860465116,
+   "h": 0.974,
+   "r": 0.601
+  },
+  "4413c75f-c90b-49a6-b2d6-c3f973d413ec": {
+   "x": 0.048,
+   "y": 0.10479041916167664,
+   "w": 0.884,
+   "h": 0.8413173652694611,
+   "r": 1.4992503748125936
+  },
+  "ab88ff6a-953c-4056-a043-1dc72cc2c88e": {
+   "x": 0.24,
+   "y": 0.068,
+   "w": 0.6,
+   "h": 0.912,
+   "r": 1
+  },
+  "ca95099f-41e3-4b76-a8c2-4e7bd9fe3c54": {
+   "x": 0.194,
+   "y": 0.092,
+   "w": 0.604,
+   "h": 0.788,
+   "r": 1
+  },
+  "d452dfdc-89c7-42be-8a91-4bfa48dd0e12": {
+   "x": 0.296,
+   "y": 0,
+   "w": 0.554,
+   "h": 0.9475524475524476,
+   "r": 1.7513134851138354
+  },
+  "7a537374-c845-4624-8e07-71a3b16e3a4e": {
+   "x": 0.238,
+   "y": 0.064,
+   "w": 0.536,
+   "h": 0.886,
+   "r": 1
+  },
+  "2324fbb0-0759-4da7-9e7e-aac396b5db53": {
+   "x": 0.008,
+   "y": 0.002325581395348837,
+   "w": 0.992,
+   "h": 0.9813953488372092,
+   "r": 1.1627906976744187
+  },
+  "07048f34-bd54-45d4-b559-1e1de90b806f": {
+   "x": 0.012,
+   "y": 0,
+   "w": 0.982,
+   "h": 0.9202733485193622,
+   "r": 1.1402508551881414
+  },
+  "3eee1ef2-d7fa-4819-8df4-6ff46d0893e7": {
+   "x": 0.03,
+   "y": 0.06839622641509434,
+   "w": 0.97,
+   "h": 0.8820754716981132,
+   "r": 1.179245283018868
+  }
+ }
+}

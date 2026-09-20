@@ -21,3 +21,13 @@ PLAN-CATALOGO.md
 
 # Tiene la clave real del panel de administracion: solo va al hosting, nunca al repo
 api/
+
+# Aplicación local: datos y herramientas, nunca publicar
+node_modules/
+.env
+.cache/
+storage/
+output/
+*.log
+__pycache__/
+*.pyc

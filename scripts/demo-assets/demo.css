@@ -1,0 +1,35 @@
+/* Aviso de demo: barra discreta, fija abajo, sin tapar el contenido. */
+#demo-banner {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 400;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .5rem 1rem;
+  padding: .55rem 1rem; box-sizing: border-box;
+  background: #2B2D42; color: #F4F1EA;
+  font-family: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: .82rem; line-height: 1.35; text-align: center;
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, .18);
+}
+#demo-banner strong { font-weight: 700; }
+#demo-reset {
+  font: inherit; font-weight: 600; cursor: pointer;
+  color: #F4F1EA; background: transparent;
+  border: 1px solid rgba(244, 241, 234, .45); border-radius: 999px;
+  padding: .25rem .8rem; min-height: 32px;
+}
+#demo-reset:hover { background: rgba(244, 241, 234, .12); border-color: rgba(244, 241, 234, .75); }
+#demo-reset:focus-visible { outline: 2px solid #9AC2B1; outline-offset: 2px; }
+
+/* Espacio para que la barra no tape el final de la página ni botones fijos. */
+body { padding-bottom: 3.4rem; }
+@media (max-width: 560px) { body { padding-bottom: 4.6rem; } }
+
+/* Nota de demo dentro del panel (PDF de muestra). */
+.demo-note {
+  margin: .5rem 0 0; padding: .55rem .7rem;
+  background: #DDECE5; border-left: 3px solid #345640; border-radius: .35rem;
+  color: #2B2D42; font-size: .85rem; line-height: 1.45;
+}
+
+@media print {
+  #demo-banner { display: none !important; }
+  body { padding-bottom: 0 !important; }
+}

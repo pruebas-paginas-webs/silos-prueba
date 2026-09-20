@@ -1,0 +1,353 @@
+{
+  "fe061612-bcb3-4533-92b9-20fe35c5c8db": {
+    "width": 500,
+    "height": 352,
+    "left": 118,
+    "top": 35,
+    "right": 381,
+    "bottom": 319,
+    "name": "Queso azul danés cremoso"
+  },
+  "73de0f16-75a6-46b9-9fa5-4b9f6f6e70fe": {
+    "width": 500,
+    "height": 417,
+    "left": 41,
+    "top": 7,
+    "right": 442,
+    "bottom": 402,
+    "name": "Queso azul danés"
+  },
+  "7abd2818-38b7-4789-9666-a28611f487f9": {
+    "width": 500,
+    "height": 352,
+    "left": 44,
+    "top": 27,
+    "right": 443,
+    "bottom": 319,
+    "name": "Queso crema"
+  },
+  "1594951e-1ac4-4992-99f5-f75f78128184": {
+    "width": 500,
+    "height": 417,
+    "left": 32,
+    "top": 53,
+    "right": 479,
+    "bottom": 400,
+    "name": "Brie"
+  },
+  "faff6f18-ba90-4608-aa5e-ea10346a06c9": {
+    "width": 500,
+    "height": 417,
+    "left": 26,
+    "top": 55,
+    "right": 477,
+    "bottom": 405,
+    "name": "Camembert"
+  },
+  "3426caf6-20a3-4426-81ed-bd04d5b9622c": {
+    "width": 466,
+    "height": 500,
+    "left": 88,
+    "top": 15,
+    "right": 379,
+    "bottom": 458,
+    "name": "Gouda"
+  },
+  "dc1b958a-587b-4b00-96b0-79adbba79669": {
+    "width": 500,
+    "height": 500,
+    "left": 105,
+    "top": 38,
+    "right": 459,
+    "bottom": 484,
+    "name": "Cheddar"
+  },
+  "9c5f59bd-3307-423c-969d-c6863b4123c1": {
+    "width": 500,
+    "height": 500,
+    "left": 38,
+    "top": 11,
+    "right": 456,
+    "bottom": 487,
+    "name": "Cheddar madurado 10 meses"
+  },
+  "fbeb6217-dc3b-4f0b-9a6d-58bcff3efbed": {
+    "width": 500,
+    "height": 354,
+    "left": 96,
+    "top": 56,
+    "right": 439,
+    "bottom": 339,
+    "name": "Queso griego (feta)"
+  },
+  "2a6556cc-59a5-4d8d-8a8b-4d86d4f6114b": {
+    "width": 500,
+    "height": 500,
+    "left": 86,
+    "top": 111,
+    "right": 466,
+    "bottom": 480,
+    "name": "Queso griego en aceite de oliva con aceitunas y hierbas"
+  },
+  "97e79974-dc97-405d-9638-f2a2d5abccde": {
+    "width": 231,
+    "height": 500,
+    "left": 6,
+    "top": 57,
+    "right": 224,
+    "bottom": 413,
+    "name": "Parmigiano Reggiano"
+  },
+  "31433927-45e0-4f23-bb6c-34f13f5505bd": {
+    "width": 334,
+    "height": 500,
+    "left": 18,
+    "top": 2,
+    "right": 315,
+    "bottom": 485,
+    "name": "Grana Padano"
+  },
+  "af0558ca-d39f-4dec-b4d2-d57169f36536": {
+    "width": 309,
+    "height": 500,
+    "left": 78,
+    "top": 52,
+    "right": 234,
+    "bottom": 445,
+    "name": "Parmigiano Reggiano"
+  },
+  "b2c56fd4-27e1-4c75-a4ea-5e1786db5db4": {
+    "width": 214,
+    "height": 500,
+    "left": 14,
+    "top": 20,
+    "right": 212,
+    "bottom": 482,
+    "name": "Grana Padano"
+  },
+  "f6af2f8f-75ec-4edd-87e8-7749fdb5795a": {
+    "width": 500,
+    "height": 500,
+    "left": 15,
+    "top": 79,
+    "right": 473,
+    "bottom": 415,
+    "name": "Provolone blanco"
+  },
+  "06414f56-997f-4c7a-93dd-198c535f4ce0": {
+    "width": 500,
+    "height": 500,
+    "left": 112,
+    "top": 21,
+    "right": 386,
+    "bottom": 474,
+    "name": "Queso rallado Granello"
+  },
+  "a7dca26f-98a4-42db-b619-cacbe7bbeef9": {
+    "width": 500,
+    "height": 495,
+    "left": 78,
+    "top": 56,
+    "right": 415,
+    "bottom": 435,
+    "name": "Manchego DO Maese Miguel"
+  },
+  "5f0da67d-68da-4758-a98d-73d325785abe": {
+    "width": 500,
+    "height": 440,
+    "left": 48,
+    "top": 31,
+    "right": 443,
+    "bottom": 411,
+    "name": "Manchego DO Maese Miguel"
+  },
+  "e014a049-0deb-4a33-892d-89a865ac8eab": {
+    "width": 500,
+    "height": 347,
+    "left": 26,
+    "top": 37,
+    "right": 491,
+    "bottom": 324,
+    "name": "Queso de cabra semicurado"
+  },
+  "da00e58e-d622-4830-98ec-818a8807385c": {
+    "width": 500,
+    "height": 500,
+    "left": 36,
+    "top": 120,
+    "right": 485,
+    "bottom": 364,
+    "name": "Queso de cabra al vino tinto"
+  },
+  "713c13ae-282e-4184-887c-f3d390c7c03b": {
+    "width": 500,
+    "height": 500,
+    "left": 96,
+    "top": 97,
+    "right": 403,
+    "bottom": 401,
+    "name": "Tapas de quesos españoles"
+  },
+  "a4b76d41-ed09-4a4f-bd8d-822b6904a462": {
+    "width": 500,
+    "height": 336,
+    "left": 83,
+    "top": 31,
+    "right": 400,
+    "bottom": 305,
+    "name": "Jamón cocido Castagna"
+  },
+  "e5435470-7bf0-42e9-a186-a9ec43ab5c64": {
+    "width": 500,
+    "height": 336,
+    "left": 72,
+    "top": 32,
+    "right": 425,
+    "bottom": 302,
+    "name": "Mortadela con pistacho Optima"
+  },
+  "04d7e22e-fb18-449e-958c-879daa2344e3": {
+    "width": 500,
+    "height": 336,
+    "left": 29,
+    "top": 80,
+    "right": 473,
+    "bottom": 296,
+    "name": "Mortadela Ovalina"
+  },
+  "bac50ba4-291e-4d69-96de-6cf7fe7d6c1b": {
+    "width": 500,
+    "height": 500,
+    "left": 27,
+    "top": 67,
+    "right": 479,
+    "bottom": 432,
+    "name": "Tapas de jamón serrano"
+  },
+  "2fce9d2c-eb9b-4041-a5c5-be7d21907b9a": {
+    "width": 314,
+    "height": 500,
+    "left": 8,
+    "top": 4,
+    "right": 306,
+    "bottom": 495,
+    "name": "Jamón serrano loncheado Gourmet"
+  },
+  "009e1e06-ce26-4725-a23a-cc8e92f455c9": {
+    "width": 500,
+    "height": 444,
+    "left": 0,
+    "top": 12,
+    "right": 500,
+    "bottom": 444,
+    "name": "Jamón serrano Bodega sin hueso"
+  },
+  "80a644ac-5162-4562-b96b-750632a01a66": {
+    "width": 500,
+    "height": 286,
+    "left": 13,
+    "top": 0,
+    "right": 481,
+    "bottom": 275,
+    "name": "Pata de jamón serrano con hueso"
+  },
+  "4413c75f-c90b-49a6-b2d6-c3f973d413ec": {
+    "width": 500,
+    "height": 334,
+    "left": 24,
+    "top": 35,
+    "right": 466,
+    "bottom": 316,
+    "name": "Mini jamón serrano con soporte y cuchillo"
+  },
+  "ed9ecf48-8940-4d5f-b5d4-782e00f5e592": {
+    "width": 310,
+    "height": 500,
+    "left": 7,
+    "top": 5,
+    "right": 301,
+    "bottom": 484,
+    "name": "Chorizo extra loncheado Artesano"
+  },
+  "44fb2d05-a36c-403e-93a9-929ccfb8e832": {
+    "width": 301,
+    "height": 500,
+    "left": 3,
+    "top": 2,
+    "right": 297,
+    "bottom": 489,
+    "name": "Salchichón loncheado Artesano"
+  },
+  "e9cf4d2b-f474-417d-a618-e0eafefc3f35": {
+    "width": 500,
+    "height": 500,
+    "left": 122,
+    "top": 22,
+    "right": 374,
+    "bottom": 442,
+    "name": "Fuet bites"
+  },
+  "7a537374-c845-4624-8e07-71a3b16e3a4e": {
+    "width": 500,
+    "height": 500,
+    "left": 119,
+    "top": 32,
+    "right": 387,
+    "bottom": 475,
+    "name": "Little chorizo"
+  },
+  "ab88ff6a-953c-4056-a043-1dc72cc2c88e": {
+    "width": 500,
+    "height": 500,
+    "left": 120,
+    "top": 34,
+    "right": 420,
+    "bottom": 490,
+    "name": "Little fuet"
+  },
+  "ca95099f-41e3-4b76-a8c2-4e7bd9fe3c54": {
+    "width": 500,
+    "height": 500,
+    "left": 97,
+    "top": 46,
+    "right": 399,
+    "bottom": 440,
+    "name": "Old Amsterdam"
+  },
+  "d452dfdc-89c7-42be-8a91-4bfa48dd0e12": {
+    "width": 500,
+    "height": 286,
+    "left": 148,
+    "top": 0,
+    "right": 425,
+    "bottom": 271,
+    "name": "Tabla soporte para jamón"
+  },
+  "2324fbb0-0759-4da7-9e7e-aac396b5db53": {
+    "width": 500,
+    "height": 430,
+    "left": 4,
+    "top": 1,
+    "right": 500,
+    "bottom": 423,
+    "name": "Basiron Pesto Verde"
+  },
+  "07048f34-bd54-45d4-b559-1e1de90b806f": {
+    "width": 500,
+    "height": 439,
+    "left": 6,
+    "top": 0,
+    "right": 497,
+    "bottom": 404,
+    "name": "Basiron Olive Tomato"
+  },
+  "3eee1ef2-d7fa-4819-8df4-6ff46d0893e7": {
+    "width": 500,
+    "height": 424,
+    "left": 15,
+    "top": 29,
+    "right": 500,
+    "bottom": 403,
+    "name": "Montana Intenso"
+  }
+}

@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import argon2 from 'argon2';
+import sharp from 'sharp';
+import {config,ROOT} from '../server/config.js';
+import {createApp} from '../server/app.js';
+import {defaults} from '../server/services/catalog.js';
+const cfg=config({dataDir:path.join(ROOT,'tmp/ui-smoke'),origin:'http://127.0.0.1:5175',port:5175});const ctx=createApp(cfg);
+if(!ctx.db.prepare('SELECT id FROM admins LIMIT 1').get())ctx.db.prepare('INSERT INTO admins(id,usuario,password_hash) VALUES(?,?,?)').run('ui-test','prueba',await argon2.hash('Prueba-local-12345'));
+if(!ctx.catalog.all().length)for(let i=1;i<=7;i++)ctx.catalog.save(null,{...defaults,producto:'Producto de prueba '+i,visible:true,stock:true});
+for(const [name,color] of [['foto-a.png','red'],['foto-b.png','blue']])await sharp({create:{width:800,height:600,channels:3,background:color}}).png().toFile(path.join(cfg.dataDir,name));
+ctx.app.listen(5175,'127.0.0.1',()=>console.log('Pruebas UI aisladas: http://127.0.0.1:5175/admin.html'));

@@ -1,0 +1,12 @@
+// Runs only in the isolated PDF renderer over escaped, server-built HTML.
+export function paginate(){
+  const cards=[...document.querySelectorAll('#source .card')],pages=document.querySelector('#pages');let current=null,category=null;
+  function makePage(cat,continuation){const page=document.createElement('section');page.className='pdf-page interior';const head=document.createElement('header');head.className='page-head';const label=document.createElement('p');label.textContent='Silos Paraguay'+(continuation?' · continuación':'');const title=document.createElement('h1');title.textContent=cat;head.append(label,title);const body=document.createElement('div');body.className='page-body';const foot=document.createElement('footer');foot.className='page-foot';const contact=document.createElement('span');contact.textContent='Silos Paraguay · jvanden@silospy.com';const number=document.createElement('span');number.className='page-number';foot.append(contact,number);page.append(head,body,foot);pages.append(page);return {page,body};}
+  function fits(body){const children=[...body.children];return !children.length||children.at(-1).getBoundingClientRect().bottom<=body.getBoundingClientRect().bottom+.5;}
+  for(let i=0;i<cards.length;){const cat=cards[i].dataset.category;if(cat!==category){category=cat;current=makePage(cat,false);}const row=document.createElement('div');row.className='row';row.append(cards[i++]);if(i<cards.length&&cards[i].dataset.category===cat)row.append(cards[i++]);current.body.append(row);
+    if(!fits(current.body)){row.remove();if(current.body.children.length)current=makePage(cat,true);current.body.append(row);}
+    if(!fits(current.body)){const children=[...row.children];row.remove();for(const card of children){if(current.body.children.length)current=makePage(cat,true);const solo=document.createElement('div');solo.className='row';card.classList.add('wide');solo.append(card);current.body.append(solo);if(!fits(current.body))throw new Error('La ficha no cabe sin recortar: '+card.querySelector('h2').textContent);}}
+  }
+  document.querySelector('#source').remove();const all=[...document.querySelectorAll('.pdf-page')];all.forEach((p,i)=>{const number=p.querySelector('.page-number');if(number)number.textContent=`${i+1} / ${all.length}`;});
+  return {pages:all.length,products:document.querySelectorAll('.card').length,overflow:all.filter(p=>p.scrollHeight>p.clientHeight+1).length};
+}

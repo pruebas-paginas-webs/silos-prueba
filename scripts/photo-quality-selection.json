@@ -1,0 +1,46 @@
+{
+  "version": "photo-quality-2026-09-20",
+  "replacements": [
+    ["Queso azul danés", "100 g", "emborg-danablu"],
+    ["Brie", "125 g", "emborg-brie"],
+    ["Camembert", "125 g", "emborg-camembert"],
+    ["Cheddar", "150 g", "emborg-cheddar"],
+    ["Queso griego (feta)", "200 g", "emborg-griego"],
+    ["Queso griego en aceite de oliva con aceitunas y hierbas", "300 g", "emborg-griego-olivas"],
+    ["Provolone blanco", "Pieza 1.5 kg aprox.", "zanetti-provolone"],
+    ["Manchego DO Maese Miguel", "150 g", "maese-miguel-150g"],
+    ["Queso de cabra al vino tinto", "150 g", "rabel-vino"],
+    ["Tapas de quesos españoles", "100 g", "rocinante-tapas"],
+    ["Jamón cocido Castagna", "Bloque 7.5 kg aprox.", "leoncini-castagna"],
+    ["Mortadela Ovalina", "700 g", "leoncini-ovalina"],
+    ["Tapas de jamón serrano", "80 g", "arroyo-tapas"]
+  ],
+  "newProducts": [
+    {"producto":"Basiron Pesto Verde","marca":"Basiron","origen":"Países Bajos","source":"9e712178-bccb-41ad-b947-5e72b210e089.png"},
+    {"producto":"Basiron Olive Tomato","marca":"Basiron","origen":"Países Bajos","source":"40d89a78-d596-4cd9-a088-9b2991cf6326.png"},
+    {"producto":"Montana Intenso","marca":"Montana","origen":"Países Bajos","source":"24334411-e34b-4aee-86b5-5927a1b79510.png"}
+  ],
+  "keepOriginal": {
+    "emborg-danablu-creamy":"La candidata usa otro diseño de envase; no sustituir por Danablu común.",
+    "emborg-crema":"El pote de la candidata difiere de la referencia recibida.",
+    "emborg-gouda":"La candidata tiene un envase rediseñado.",
+    "emborg-mature":"La candidata tiene un envase rediseñado.",
+    "zanetti-parmigiano-1kg":"Etiqueta actualizada; se conserva la referencia hasta validar esta presentación.",
+    "zanetti-grana-1kg":"Etiqueta actualizada; se conserva la referencia hasta validar esta presentación.",
+    "zanetti-parmigiano-150g":"El fabricante reutiliza la foto entre gramajes; no validado para 150 g.",
+    "zanetti-grana-150g":"El fabricante reutiliza la foto entre gramajes; no validado para 150 g.",
+    "zanetti-granello":"Bolsa 125 g/lata 160 g: no sustituir la presentación del catálogo.",
+    "maese-miguel-430g":"La candidata comercial corresponde a 500 g.",
+    "rabel-cabra":"La candidata no aporta detalle suficiente.",
+    "leoncini-optima":"La candidata oficial es sin pistachos.",
+    "arroyo-gourmet":"No hay una alternativa exacta de mejor resolución validada.",
+    "arroyo-chorizo":"La prueba de IA inventa texto/detalle; no usar.",
+    "arroyo-salchichon":"No hay una alternativa exacta de mejor resolución validada.",
+    "arroyo-deshuesado":"No hay una alternativa exacta de mejor resolución validada.",
+    "conchel-little-chorizo":"La candidata tiene otro envase; confirmar pack/gramaje.",
+    "conchel-little-fuet":"La candidata tiene otro envase; confirmar pack/gramaje.",
+    "conchel-mini-fuet":"La candidata tiene otro envase; confirmar pack/gramaje.",
+    "jamon-con-hueso":"Se conserva original de 756 px; la alternativa es generativa.",
+    "izquierdo-mini-jamon":"Se conserva original; la alternativa es generativa."
+  }
+}
