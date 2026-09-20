@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo — Silos Paraguay</title>
+  <meta name="description" content="Catálogo de quesos, jamones y fiambres premium que Silos Paraguay importa de Europa. Consultá disponibilidad." />
+  <meta name="theme-color" content="#2B2D42" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Silos Paraguay" />
+  <meta property="og:title" content="Catálogo — Silos Paraguay" />
+  <meta property="og:description" content="Quesos, jamones y fiambres premium de Europa, importados por Silos Paraguay." />
+  <meta property="og:locale" content="es_PY" />
+  <link rel="icon" type="image/png" href="assets/logo/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon-180.png" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="demo.css">
+  <script src="demo.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Silos Paraguay, inicio">
+        <img class="brand-logo" src="assets/logo/silos-paraguay.png" alt="Silos Paraguay" width="1359" height="713" />
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="index.html#nosotros">Nosotros</a></li>
+          <li><a href="index.html#origenes">Orígenes</a></li>
+          <li><a href="index.html#productos">Productos</a></li>
+          <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+          <li><a href="index.html#marcas">Marcas</a></li>
+          <li><a href="index.html#clientes">Clientes</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="mailto:jvanden@silospy.com,cecierbin@silospy.com?subject=Consulta%20desde%20el%20cat%C3%A1logo">
+        <span>Escribinos</span>
+        <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+    <nav class="mobile-nav" aria-label="Menú móvil">
+      <a href="index.html#nosotros" data-mm-link>Nosotros</a>
+      <a href="index.html#origenes" data-mm-link>Orígenes</a>
+      <a href="index.html#productos" data-mm-link>Productos</a>
+      <a href="catalogo.html" data-mm-link>Catálogo</a>
+      <a href="index.html#marcas" data-mm-link>Marcas</a>
+      <a href="index.html#clientes" data-mm-link>Clientes</a>
+      <a href="index.html#contacto" data-mm-link>Contacto</a>
+      <a class="btn btn-primary mobile-cta" href="mailto:jvanden@silospy.com,cecierbin@silospy.com?subject=Consulta%20desde%20el%20cat%C3%A1logo" data-mm-link>
+        <span>Escribinos</span>
+        <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="section catalog-head">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Catálogo</p>
+          <h1 class="section-title">Todo lo que traemos</h1>
+          <p class="section-sub">Quesos, jamones y fiambres premium de Europa. Consultanos disponibilidad y condiciones para tu canal.</p>
+        </header>
+        <div class="catalog-actions">
+
+          <a class="btn btn-ghost" href="mailto:jvanden@silospy.com,cecierbin@silospy.com?subject=Consulta%20de%20productos"><span>Consultá disponibilidad</span></a>
+        </div>
+        <div class="catalog-search-row"><label for="catalog-search">Buscar producto o marca<input id="catalog-search" type="search" placeholder="Brie, jamón, Emborg…" /></label><label class="catalog-stock-label"><input id="catalog-stock" type="checkbox" /> Solo disponibles</label></div>
+        <div class="catalog-filters" data-filters role="group" aria-label="Filtrar por categoría"></div>
+      </div>
+    </section>
+
+    <section class="section section-panel catalog-body">
+      <div class="container">
+        <p class="catalog-status" data-status role="status">Cargando catálogo…</p>
+        <div data-catalog></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/logo/silos-paraguay-claro.png" width="1359" height="713" alt="Silos Paraguay" loading="lazy" />
+        <p class="footer-tag">¡Traemos a Paraguay las cosas más ricas del mundo! Importación y distribución de alimentos premium de Europa, desde 2021.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Pie de página">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="index.html#nosotros">Nosotros</a></li>
+          <li><a href="index.html#origenes">Orígenes</a></li>
+          <li><a href="index.html#productos">Productos</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="index.html#marcas">Marcas</a></li>
+          <li><a href="index.html#clientes">Clientes</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:jvanden@silospy.com">jvanden@silospy.com</a></li>
+          <li><a href="tel:+595981630931">+595 981 630 931</a></li>
+          <li><a href="mailto:cecierbin@silospy.com">cecierbin@silospy.com</a></li>
+          <li><a href="tel:+595994703334">+595 994 703 334</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> Silos Paraguay SRL. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <script src="catalogo.js" defer></script>
+</body>
+</html>
