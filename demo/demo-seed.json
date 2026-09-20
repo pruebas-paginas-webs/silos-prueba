@@ -844,7 +844,7 @@
   "mediaHistory": {}
  },
  "updates": {
-  "version": "accesorios-encuadre-2026-09-20",
+  "version": "accesorios-encuadre-2026-09-20b",
   "photos": [
    {
     "id": "71adb305-9b2b-4bbc-b713-1b127814c31c",
@@ -1004,6 +1004,11 @@
    {
     "id": "d1038ca6-f1a1-45dd-8fcd-b71e01c1436a",
     "previous": "Especialidades",
+    "next": "Quesos"
+   },
+   {
+    "id": "d1038ca6-f1a1-45dd-8fcd-b71e01c1436a",
+    "previous": "Accesorios",
     "next": "Quesos"
    }
   ],
