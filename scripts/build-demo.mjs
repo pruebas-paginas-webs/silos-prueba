@@ -43,7 +43,7 @@ async function main() {
   const mediaMeta=new Map(db.prepare("SELECT id,metadata FROM media WHERE status='ready'").all()
     .map(r=>[r.id,JSON.parse(r.metadata||'{}')]));
   const oldAmsterdam=rows.find(r=>/old amsterdam/i.test(JSON.parse(r.data).producto));
-  const updates={version:'accesorios-encuadre-2026-09-20',photos:photos.map(p=>({id:p.id,previousMedia:p.previousMedia})),addedProductIds:additions?JSON.parse(additions.value).map(p=>p.id):[],categories:oldAmsterdam?[{id:oldAmsterdam.id,previous:'Especialidades',next:'Quesos'}]:[],renameCategories:[{previous:'Especialidades',next:'Accesorios'}]};
+  const updates={version:'accesorios-encuadre-2026-09-20b',photos:photos.map(p=>({id:p.id,previousMedia:p.previousMedia})),addedProductIds:additions?JSON.parse(additions.value).map(p=>p.id):[],categories:oldAmsterdam?[{id:oldAmsterdam.id,previous:'Especialidades',next:'Quesos'},{id:oldAmsterdam.id,previous:'Accesorios',next:'Quesos'}]:[],renameCategories:[{previous:'Especialidades',next:'Accesorios'}]};
   db.close();
 
   const products = rows.map((r, i) => {

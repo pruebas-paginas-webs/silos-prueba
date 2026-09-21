@@ -12,15 +12,15 @@ export function mergeSeedUpdate(saved, fresh) {
   for(const id of update.addedProductIds){
     if(!result.products.some(p=>p.id===id)&&initial.has(id))result.products.push(structuredClone(initial.get(id)));
   }
-  // Renombre de categoría: la lista y los productos que el visitante no movió.
+  for(const change of update.categories||[]){
+    const p=result.products.find(p=>p.id===change.id);
+    if(p&&p.categoria===change.previous){p.categoria=change.next;p.version++;}
+  }
+  // Después de las mudanzas puntuales: renombrar la categoría y lo que quedó en ella.
   for(const {previous,next} of update.renameCategories||[]){
     const i=result.settings.categories.indexOf(previous);
     if(i>=0&&!result.settings.categories.includes(next))result.settings.categories[i]=next;
     for(const p of result.products)if(p.categoria===previous){p.categoria=next;p.version++;}
-  }
-  for(const change of update.categories||[]){
-    const p=result.products.find(p=>p.id===change.id);
-    if(p&&p.categoria===change.previous){p.categoria=change.next;p.version++;}
   }
   result.settings.demoContentVersion=update.version;
   result.settings.revision++;

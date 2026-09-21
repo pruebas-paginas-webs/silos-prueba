@@ -42,3 +42,17 @@ test('la demo propaga el renombre de categoría y conserva los encuadres del vis
   assert.deepEqual(out2.settings.categories,['Quesos','Mis cosas']);
   assert.equal(out2.products[0].categoria,'Mis cosas');
 });
+test('un producto que se muda de categoría no queda atrapado por el renombre',()=>{
+  // Old Amsterdam se muda de Especialidades a Quesos; a la vez Especialidades pasa
+  // a llamarse Accesorios. La mudanza puntual tiene que ganar.
+  const fresh={products:[{id:'oa',categoria:'Quesos',version:9},{id:'tabla',categoria:'Accesorios',version:9}],
+    updates:{version:'v9',photos:[],addedProductIds:[],
+      categories:[{id:'oa',previous:'Especialidades',next:'Quesos'}],
+      renameCategories:[{previous:'Especialidades',next:'Accesorios'}]}};
+  const saved={products:[{id:'oa',categoria:'Especialidades',version:3},{id:'tabla',categoria:'Especialidades',version:3}],
+    settings:{revision:5,categories:['Quesos','Especialidades'],frames:{}}};
+  const out=mergeSeedUpdate(saved,fresh);
+  assert.equal(out.products.find(p=>p.id==='oa').categoria,'Quesos');
+  assert.equal(out.products.find(p=>p.id==='tabla').categoria,'Accesorios');
+  assert.deepEqual(out.settings.categories,['Quesos','Accesorios']);
+});
