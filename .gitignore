@@ -31,3 +31,6 @@ output/
 *.log
 __pycache__/
 *.pyc
+
+# Cloudflare (estado local de wrangler)
+.wrangler/

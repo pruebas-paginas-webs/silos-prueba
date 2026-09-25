@@ -1,0 +1,15 @@
+name = "silos-pdf-prueba"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# Navegador de Cloudflare (Browser Rendering). En el plan gratuito: 10 minutos
+# de navegador por día. Nuestro PDF usa unos 7 segundos y cierra la sesión.
+[browser]
+binding = "BROWSER"
+
+# styles.css y framing.js van incrustados como texto en el HTML que se imprime.
+# prepare.mjs los copia desde el proyecto a src/vendor/.
+[[rules]]
+type = "Text"
+globs = ["**/*.css", "**/*.txt"]
+fallthrough = true

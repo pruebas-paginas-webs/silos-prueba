@@ -4,6 +4,32 @@ Actualizado: 20 de septiembre de 2026 (tarde). Aplicación local E0–E7. La dem
 publicada por separado; esta corrección todavía requiere un nuevo deploy.
 Rama: `codex/catalogo-admin-pdf`. Los archivos anteriores se conservaron.
 
+## 25/09: publicación sin servidor en Cloudflare — decisión y validación
+
+Se decidió publicar la app real **sin servidor, todo en Cloudflare** (web y panel como
+assets de un Worker, datos en D1, fotos en R2, login del panel con Access, PDF con
+Browser Rendering), en la cuenta de Cloudflare **del cliente** (`Jvanden@silospy.com's
+Account`, id `068b80917d44c557d17966f3c57d655f`) con Agustín como miembro. Motivo: costo
+mensual cero; el cliente estima un PDF por mes. Supabase descartado: su plan gratis pausa
+proyectos inactivos.
+
+**Validación del PDF en Browser Rendering (`cloudflare/pdf-prueba/`), aprobada:** el
+catálogo real (39 productos, fotos y encuadres de la demo publicada) impreso con la misma
+paginación y el mismo encuadre del servidor. Tres corridas: **7,8 / 8,3 / 8,1 s** de
+navegador cada una (lanzar 2,2–3,2 s, cargar 2,1–2,6 s, paginar 0,3 s, imprimir 2–2,6 s,
+cierre explícito). 14 páginas sin precios, 16 con precios, 0 desbordes, encuadre 39/39,
+~5 MB. Con 10 minutos diarios del plan gratis entran ~70 PDF por día.
+
+Confirmado el límite de **un navegador nuevo cada 20 segundos**: un pedido inmediato
+devuelve error 1101. La implementación real tiene que capturar el error del lanzamiento y
+mostrar "esperá unos segundos" en vez de fallar. Fotos y fuentes van por URL (el Worker
+gratis tiene 10 ms de CPU; incrustar 4 MB en base64 no entra).
+
+Creado: base D1 `silos-catalogo` (id `c4ef1a04-cbac-4548-b6db-1b22c11b9c0f`, región ENAM).
+**Bloqueado hasta que el cliente cargue una tarjeta:** R2 (`Please enable R2 through the
+Cloudflare Dashboard`, código 10042) y el plan gratuito de Zero Trust para Access. El
+instructivo para el cliente está en `CLIENTE-CUENTA-CLOUDFLARE.md`.
+
 ## Revisión del 20/09 (tarde): encuadre de fotos y categoría «Accesorios»
 
 «Especialidades» pasó a llamarse **Accesorios** con el mismo servicio que usa el panel:
